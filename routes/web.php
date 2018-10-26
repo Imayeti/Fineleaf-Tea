@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/teapage', function () {
+    return view('teapage');
+
+});
+
+Route::get('/homepage', function () {
+   return view('homepage');
+});

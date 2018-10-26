@@ -1,0 +1,65 @@
+.navbackground {
+  background-color: 	#eaeaea;
+}
+
+
+.navbar {
+ min-height: 80px;
+ font-size: 25px;
+ color: black;
+
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+.navbar-toggle {
+ /* (80px - button height 34px) / 2 = 23px */
+ margin-top: 23px;
+ padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+ .navbar-nav > li > a {
+   /* (80px - line-height of 27px) / 2 = 26.5px */
+   padding-top: 26.5px;
+   padding-bottom: 26.5px;
+   line-height: 27px;
+ }
+}
+
+body {
+font-family: 'Raleway', sans-serif;
+}
+
+.center-block2 {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+
+
+
+}
+
+.teatext {
+  /* margin: auto; */
+  margin-right: 50px;
+  margin-top: 110px;
+}
+
+.fadedPic {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbarTextBackground {
+  background-color: white;
+}
