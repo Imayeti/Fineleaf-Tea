@@ -17,10 +17,10 @@ Route::get('/', function () {
 
 
 Route::get('/teapage', function () {
-    return view('teapage');
+    return view('pages.teapage');
 
 });
 
 Route::get('/homepage', function () {
-   return view('homepage');
+   return view('pages.homepage');
 });
