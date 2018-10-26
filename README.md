@@ -1,4 +1,4 @@
-# See Files For Pictures of Mockups and Database Structure!
+# See Docs Folder For Pictures of Mockups and Database Structure!
 
 # Final Project Idea
 
