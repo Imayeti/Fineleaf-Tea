@@ -24,3 +24,8 @@ Route::get('/teapage', function () {
 Route::get('/homepage', function () {
    return view('pages.homepage');
 });
+
+
+Route::get('/tea_choice', function () {
+   return view('pages.tea_choice');
+});
