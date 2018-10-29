@@ -73,3 +73,21 @@ font-family: 'Raleway', sans-serif;
   margin-bottom: 10px; /* Added */
 
 }
+
+.card {
+  border: none;
+
+}
+
+.center-it {
+margin-left: 65px;
+
+
+
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
