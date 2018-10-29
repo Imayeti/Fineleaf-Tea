@@ -4,6 +4,15 @@ body {
 font-family: 'Raleway', sans-serif;
 }
 
+.background-image {
+  /* background:url("images/tea-mountain.jpg");      */
+  min-height : 100%;
+  min-width : 100%;
+  /* background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden; */
+ }
 
 
 .navbackground {
@@ -90,4 +99,8 @@ margin-left: auto;
   display: flex;
   justify-content: center;
 
+}
+
+.glass:hover {
+ filter: brightness(50%);
 }

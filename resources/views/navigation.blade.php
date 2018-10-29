@@ -1,8 +1,8 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <i class="fas fa-leaf"></i>
-  <a class="navbar-brand" href="homepage"> Micah's Tea</a>
+    <i class="fas fa-leaf ml-2"></i>
+  <a class="navbar-brand ml-2" href="homepage"> Micah's Tea</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -42,7 +42,8 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <image src="images/magnifying-glass.png" width="23px" alt="mfg" class="glass">
     </form>
+    <i class="fas fa-shopping-cart mr-3 ml-5"></i>
   </div>
 </nav>

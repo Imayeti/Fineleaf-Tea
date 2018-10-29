@@ -100,7 +100,7 @@
       </div>
 </div>
 
-<hr width="60%" class="center-block mt-3 mb-3">
+<hr width="50%" class="center-block mt-3 mb-3">
 
 
 
@@ -117,7 +117,7 @@
         <img class="d-block w-100" src="images/Gong-fu.jpg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="images/gaiwan.jpg" alt="Second slide">
+        <img class="d-block w-100" src="images/carousel-gaiwan.jpg" alt="Second slide">
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="images/gongfuset_1.jpg" alt="Third slide">
