@@ -80,14 +80,14 @@ font-family: 'Raleway', sans-serif;
 }
 
 .center-it {
-margin-left: 65px;
+margin-left: auto;
 
 
 
 }
 
-.container2 {
+.center-button {
   display: flex;
   justify-content: center;
-  align-items: center;
+
 }

@@ -1,41 +1,24 @@
 @extends('layout')
 
 @section('title')
-    Sheng Puer
+
+    Black Tea
 @endsection
 
 @section('content')
 
 
 
-    <div class="row container-fluid" style="min-height:520px;">
-
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="center-block2" src="images/rawpuer.jpg" width="400px" alt="raw puer">
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 teatext">
-
-
-        <div class="pb-2">
-
-        <h1 >Sheng Puer</h1>
-        <p>Pu'er traditionally begins as a raw product known as "rough" máochá (毛茶) and can be sold in this form or pressed into a number of shapes and sold as "raw" shēngchá (生茶). Both of these forms then undergo the complex process of gradual fermentation and maturation with time. The wòduī (渥堆) fermentation process developed in 1973 by the Kunming Tea Factory</p>
-      </div>
-
-      <div class=" pb-4">
-        <hr width="80%" class="center-block ">
-      </div>
-
-      <div class="float-right">
-        1 oz. - $15.00<button type="button" class="btn btn-light ml-5 mr-3">Add To Cart</button>
-      </div>
-
-      </div>
-    </div>
+<h1 class="text-center mt-5">Teaware</h1>
+<hr width="100px" class="center-block pb-5">
 
 
 
+
+
+
+
+<hr width="60%" class="center-block mt-3 mb-3">
 
 
 
@@ -68,5 +51,9 @@
     </a>
   </div>
 </div>
+
+
+
+
 
 @endsection
