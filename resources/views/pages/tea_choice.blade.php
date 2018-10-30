@@ -15,7 +15,7 @@
 <div class="row container " style=" margin: 0 auto;">
 
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
-        <div class="card card-center border-none card-shadow">
+        <div class="card card-center border-none">
           <img class="card-img-top" src="images/Golden-Monkey-Black.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text text-center">golden monkey black tea</p>

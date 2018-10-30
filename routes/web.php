@@ -34,3 +34,8 @@ Route::get('/tea_choice', function () {
 Route::get('/teaware', function () {
    return view('pages.teaware');
 });
+
+
+Route::get('/shopping_cart', function () {
+   return view('pages.shopping_cart');
+});

@@ -1,4 +1,6 @@
 
+
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -12,3 +14,161 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+
+
+body {
+font-family: 'Fahkwang', sans-serif;
+background-color: white;
+}
+
+.background-image {
+  /* display: inline-block; */
+  width: 100%;
+  height: auto;
+  /* background-size: cover;
+  background-position: center;
+  background-color: red;
+  background-image: url(images/tea-mountain.jpg); */
+ }
+
+
+.navbackground {
+  background-color: 	#F6F5F5;
+}
+
+
+.navbar {
+ min-height: 80px;
+ font-size: 20px;
+ color: black;
+
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+.navbar-toggle {
+ /* (80px - button height 34px) / 2 = 23px */
+ margin-top: 23px;
+ padding: 9px 10px !important;
+}
+
+
+
+
+.center-block2 {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+
+
+
+}
+
+.teatext {
+  /* margin: auto; */
+
+  /* margin-right: 10px; */
+ margin-top: 110px;
+ /* padding-right: 30px; */
+}
+
+.faded-pic {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.navbar a {
+
+    color: black;
+    /* background-color: #F6F5F5; */
+}
+
+.navbarTextBackground {
+  background-color: white;
+}
+
+.card-center {
+
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+
+}
+
+.card {
+  border: none;
+
+}
+
+.center-it {
+margin-left: auto;
+
+
+
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+
+}
+
+.glass:hover {
+ filter: brightness(50%);
+}
+
+.card-shadow {
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+
+#t01 {
+  margin-top: 30px;
+  font-size: 20px;
+  th, td{
+
+    padding-left: 70px;
+    padding-right: 70px;
+
+  }
+  th{
+    padding-bottom: 20px;
+  }
+
+}
+
+#t02 {
+
+  font-size: 18px;
+  margin-top: 50px;
+  th, td{
+
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+  }
+  th{
+    padding-bottom: 10px;
+  }
+
+}
+
+
+/* .bg {
+  background: url('images/tea-mountain.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+*/
