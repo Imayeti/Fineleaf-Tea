@@ -1,5 +1,8 @@
 
+$theme-colors: (
+  "primary": #d7fefa,
 
+);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
@@ -41,7 +44,7 @@ background-color: white;
 .navbar {
  min-height: 80px;
  font-size: 20px;
- color: black;
+ color: #353535;
 
 }
 
@@ -127,39 +130,21 @@ margin-left: auto;
   box-shadow: 5px 5px 5px 5px lightgrey;
 }
 
+.table{
+  th{vertical-align: middle;}
 
-#t01 {
-  margin-top: 30px;
-  font-size: 20px;
-  th, td{
-
-    padding-left: 70px;
-    padding-right: 70px;
-
-  }
-  th{
-    padding-bottom: 20px;
-  }
-
+  td{vertical-align: middle;}
 }
 
-#t02 {
-
-  font-size: 18px;
-  margin-top: 50px;
-  th, td{
-
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-  }
-  th{
-    padding-bottom: 10px;
-  }
-
+.btn {
+  border-radius: 0;
+  background-color: #353535;
+  color: white;
 }
+
+
+
+
 
 
 /* .bg {

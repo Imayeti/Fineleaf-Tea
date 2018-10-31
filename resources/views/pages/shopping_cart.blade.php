@@ -77,62 +77,65 @@
 
 <h1 class="text-center mt-5 mb-4">Cart</h1>
 
-<div class="container mt-5" >
 
-  <table id="t01"  align="right">
+
+  <table  id="t01" align="right" class="table">
+    <tbody>
     <tr class="border-bottom">
-      <th>PRODUCT</th>
-      <th>DESCRIPTION</th>
+      <th class="pl-5">PRODUCT</th>
+      <th>&nbsp</th>
       <th>PRICE</th>
 
     </tr>
     <tr class="border-bottom">
-      <td><image class="mr-5"src="images/Assam.jpg" style="max-width:75px;">Green Tea</td>
-      <td>Light Nutty Green</td>
+      <td ><image class="ml-4 mr-5"src="images/Assam.jpg" style="max-width:75px;">Green Tea</td>
+      <td >Light Nutty Green</td>
       <td>$15.00</td>
 
     </tr>
     <tr>
-      <td><image class="mr-5"src="images/Assam.jpg" style="max-width:75px;">Black Tea</td>
+      <td ><image class="ml-4 mr-5"src="images/Assam.jpg" style="max-width:75px;">Black Tea</td>
       <td>Malty Dark Delicious</td>
       <td>$12.00</td>
 
     </tr>
-  </table>
+  </tbody>
+<tfoot>
 
 
-<div class="container mt-5">
 
 
-  <table id="t02" align="right">
-    <tr class="border-bottom">
-      <th>CART TOTALS</th>
-      <th></th>
-      <th></th>
+    <tr>
+      <th class="border-top-0"></th>
+      <th class="border-top-0">CART TOTALS</th>
+      <th class="border-top-0">&nbsp</th>
 
     </tr>
-    <tr class="border-bottom">
+    <tr class="border-0">
+      <td class="border-top-0" >&nbsp</td>
       <td>SUBTOTAL</td>
-      <td></td>
       <td>$27.00</td>
 
     </tr>
-    <tr class="border-bottom">
+    <tr>
+      <td class="border-top-0">&nbsp</td>
       <td>SHIPPING</td>
-      <td></td>
       <td>$10.00</td>
 
     </tr>
     <tr>
+      <td class="border-top-0">&nbsp</td>
       <td>TOTAL</td>
-      <td></td>
       <td>$37.00</td>
 
     </tr>
+  </tfoot>
+
   </table>
 
+  <button type="button" class="btn float-right mt-3 mr-3" >Proceed to Checkout</button>
 
-</div>
+
 
 
 <script
