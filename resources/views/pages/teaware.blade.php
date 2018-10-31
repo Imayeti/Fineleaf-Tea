@@ -9,7 +9,7 @@
 
 
 
-<h1 class="text-center mt-5">Teaware</h1>
+<h1 class="text-center mt-5 ">Teaware</h1>
 <hr width="100px" class="center-block pb-5">
 
 

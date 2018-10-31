@@ -39,3 +39,7 @@ Route::get('/teaware', function () {
 Route::get('/shopping_cart', function () {
    return view('pages.shopping_cart');
 });
+
+Route::get('/sign_up', function () {
+   return view('pages.sign_up');
+});
