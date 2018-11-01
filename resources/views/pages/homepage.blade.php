@@ -70,10 +70,10 @@
                 <p class="lead text-center">No Frills, Just The Good Stuff</p>
               </div>
             </div> -->
-
+<!--
 
 <div class="bgimg">
-  <!-- <h3 class="text-center  pt-5">We Think You Will Love:</h3> -->
+
   <div class="container col-lg-6 col-md-8 col-sm-10 col-xs-10 pt-5 mb-5 mt-5 pb-5">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -102,10 +102,12 @@
       </a>
     </div>
   </div>
-</div>
+</div> -->
 
 
-<div class="bgimg">
+<img class="center mb-5" src="images/tea-club3.jpg" style="max-width: 80%;">
+
+<div class="bgimg faded-pic">
 <img src="images/map.jpg" style="max-width: 100%">
 </div>
 
