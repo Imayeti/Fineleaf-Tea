@@ -43,3 +43,13 @@ Route::get('/shopping_cart', function () {
 Route::get('/sign_up', function () {
    return view('pages.sign_up');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//test route!!!!!
+Route::get('/layouttest', function () {
+   return view('pages.layouttest');
+});
+//
