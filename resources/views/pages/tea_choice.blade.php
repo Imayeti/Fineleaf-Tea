@@ -92,7 +92,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card card-center">
-          <img class="card-img-top" src="images/Golden-Monkey-Black.jpg" alt="Card image cap">
+          <img class="card-img-top" src="images/Gyokuro.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">golden monkey black tea</p>
           </div>

@@ -10686,7 +10686,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+
+.background-pic {
+  background-image: url("/images/map.jpg");
 }
 
 h3 {
