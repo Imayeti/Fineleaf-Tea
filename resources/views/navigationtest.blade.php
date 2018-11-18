@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-light ">
 
-                <i class="fas fa-leaf ml-3"></i>
+                <a href="/"><i class="fas fa-leaf ml-3"></i></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -43,6 +22,22 @@
                               <a class="dropdown-item" href="tea_choice">Oolong Tea</a>
                               <a class="dropdown-item" href="tea_choice">White Tea</a>
                             </div>
+
+                      </li>
+                      <li class="nav-item dropdown ml-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Teaware
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="teaware">Gaiwans</a>
+                          <a class="dropdown-item" href="teaware">Teapots</a>
+                          <a class="dropdown-item" href="teaware">Cups</a>
+                          <a class="dropdown-item" href="teaware">Pitchers</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">About</a>
                       </li>
                     </ul>
 
@@ -51,11 +46,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}"><p class="small-txt ">Login</p></a>
                             </li>
                             <li class="nav-item">
                                 @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}" ><p class="small-txt ">Register</p></a>
                                 @endif
                             </li>
                         @else
@@ -79,12 +74,5 @@
                         @endguest
                     </ul>
                 </div>
-
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
-</body>
-</html>
+            </nav>
+          </div>

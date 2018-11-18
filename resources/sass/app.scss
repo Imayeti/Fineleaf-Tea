@@ -18,10 +18,14 @@ $theme-colors: (
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.small-txt {
+  font-size: 15px;
 
+}
 
 body {
-font-family: 'Fahkwang', sans-serif;
+  font-family: 'Cinzel', serif;
+
 background-color: white;
 }
 
@@ -251,4 +255,35 @@ button:hover {
 
 h3 {
   color: #31a8c2;
+}
+
+
+
+
+
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #efefef;
+}
+
+
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
 }
