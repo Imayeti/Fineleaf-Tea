@@ -15,7 +15,7 @@
               Tea
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tea_choice">Green Tea</a>
+              <a class="dropdown-item" href="tea">Green Tea</a>
               <a class="dropdown-item" href="tea_choice">Black Tea</a>
               <a class="dropdown-item" href="tea_choice">Puerh Tea</a>
               <a class="dropdown-item" href="tea_choice">Oolong Tea</a>

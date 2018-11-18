@@ -16,20 +16,25 @@ Route::get('/', function () {
 });
 
 
-Route::get('/teapage', function () {
-    return view('pages.teapage');
-
-});
+// Route::get('/teapage', function () {
+//     return view('pages.teapage');
+//
+// });
 
 Route::get('/homepage', function () {
    return view('pages.homepage');
 });
 
 
-Route::get('/tea_choice', function () {
-   return view('pages.tea_choice');
-});
+// Route::get('/tea_choice', function () {
+//    return view('pages.tea_choice');
+// });
+//new of above
+Route::resource('/tea','TeaController');
 
+// Route::get('/tea_page/{id}','ProductController@show');
+
+Route::resource('/tea/{id}', 'TeaController');
 
 Route::get('/teaware', function () {
    return view('pages.teaware');
