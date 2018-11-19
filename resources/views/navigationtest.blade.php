@@ -16,11 +16,11 @@
                               Tea
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="tea?type=greentea">Green Tea</a>
-                              <a class="dropdown-item" href="tea?type=blacktea">Black Tea</a>
-                              <a class="dropdown-item" href="tea?type=puerhtea">Puerh Tea</a>
+                              <a class="dropdown-item" href="/tea?type=greentea">Green Tea</a>
+                              <a class="dropdown-item" href="/tea?type=blacktea">Black Tea</a>
+                              <a class="dropdown-item" href="/tea?type=puerhtea">Puerh Tea</a>
 
-                              <a class="dropdown-item" href="tea?type=whitetea">White Tea</a>
+                              <a class="dropdown-item" href="/tea?type=whitetea">White Tea</a>
                             </div>
 
                       </li>
@@ -29,10 +29,10 @@
                           Teaware
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="teaware">Gaiwans</a>
-                          <a class="dropdown-item" href="teaware">Teapots</a>
-                          <a class="dropdown-item" href="teaware">Cups</a>
-                          <a class="dropdown-item" href="teaware">Pitchers</a>
+                          <a class="dropdown-item" href="/teaware">Gaiwans</a>
+                          <a class="dropdown-item" href="/teaware">Teapots</a>
+                          <a class="dropdown-item" href="/teaware">Cups</a>
+                          <a class="dropdown-item" href="/teaware">Pitchers</a>
                         </div>
                       </li>
 

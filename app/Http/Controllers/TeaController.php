@@ -17,35 +17,28 @@ class TeaController extends Controller
       $type = $request->fullUrl();
 
       if (strpos($type, 'blacktea') !== false) {
+        $teatype = "Black Tea";
         $teas = new \App\product;
-
         $teas = $teas->all()->where('type', 'blacktea');
-
-        return view('pages.tea_choice', compact('teas'));
+        return view('pages.tea_choice', compact('teas','teatype'));
 
       }elseif(strpos($type, 'greentea') !== false) {
-
+        $teatype = "Green Tea";
         $teas = new \App\product;
-
         $teas = $teas->all()->where('type', 'greentea');
-
-        return view('pages.tea_choice', compact('teas'));
+        return view('pages.tea_choice', compact('teas', 'teatype'));
 
       }elseif(strpos($type, 'puerhtea') !== false) {
-        dd('puerhtea');
+        $teatype = "Puerh Tea";
         $teas = new \App\product;
-
         $teas = $teas->all()->where('type', 'puerhtea');
-
-        return view('pages.tea_choice', compact('teas'));
+        return view('pages.tea_choice', compact('teas','teatype'));
 
       }elseif(strpos($type, 'whitetea') !== false) {
-        dd('whitetea');
+        $teatype = "White Tea";
         $teas = new \App\product;
-
         $teas = $teas->all()->where('type', 'whitetea');
-
-        return view('pages.tea_choice', compact('teas'));
+        return view('pages.tea_choice', compact('teas','teatype'));
       }
     }
 

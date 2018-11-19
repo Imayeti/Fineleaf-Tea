@@ -9,7 +9,7 @@
 
 
 
-<h1 class="text-center mt-5">Black Tea</h1>
+<h1 class="text-center mt-5">{{ $teatype }}</h1>
 <hr width="100px" class="center-block pb-5">
 
 
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="mb-3 text-center">
-          1 oz. - {{ $tea->price }}
+          1 oz. - ${{ $tea->price }}.00
         </div>
         <div class="center-button">
           <form class="" action="" method="get">
