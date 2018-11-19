@@ -11,13 +11,42 @@ class TeaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-      $teas = new \App\product;
 
-      $teas = $teas->all();
+      $type = $request->fullUrl();
 
-      return view('pages.tea_choice', compact('teas'));
+      if (strpos($type, 'blacktea') !== false) {
+        $teas = new \App\product;
+
+        $teas = $teas->all()->where('type', 'blacktea');
+
+        return view('pages.tea_choice', compact('teas'));
+
+      }elseif(strpos($type, 'greentea') !== false) {
+
+        $teas = new \App\product;
+
+        $teas = $teas->all()->where('type', 'greentea');
+
+        return view('pages.tea_choice', compact('teas'));
+
+      }elseif(strpos($type, 'puerhtea') !== false) {
+        dd('puerhtea');
+        $teas = new \App\product;
+
+        $teas = $teas->all()->where('type', 'puerhtea');
+
+        return view('pages.tea_choice', compact('teas'));
+
+      }elseif(strpos($type, 'whitetea') !== false) {
+        dd('whitetea');
+        $teas = new \App\product;
+
+        $teas = $teas->all()->where('type', 'whitetea');
+
+        return view('pages.tea_choice', compact('teas'));
+      }
     }
 
     /**
@@ -49,7 +78,16 @@ class TeaController extends Controller
      */
     public function show($id)
     {
-          return view('pages.teapage');
+      //test
+
+      $tea = \App\product::find($id);
+
+
+
+      return view('pages.teapage', compact('tea'));
+
+
+
     }
 
     /**

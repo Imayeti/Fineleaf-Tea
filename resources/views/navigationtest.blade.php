@@ -16,11 +16,11 @@
                               Tea
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="tea">Green Tea</a>
-                              <a class="dropdown-item" href="tea_choice">Black Tea</a>
-                              <a class="dropdown-item" href="tea_choice">Puerh Tea</a>
-                              <a class="dropdown-item" href="tea_choice">Oolong Tea</a>
-                              <a class="dropdown-item" href="tea_choice">White Tea</a>
+                              <a class="dropdown-item" href="tea?type=greentea">Green Tea</a>
+                              <a class="dropdown-item" href="tea?type=blacktea">Black Tea</a>
+                              <a class="dropdown-item" href="tea?type=puerhtea">Puerh Tea</a>
+
+                              <a class="dropdown-item" href="tea?type=whitetea">White Tea</a>
                             </div>
 
                       </li>

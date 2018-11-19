@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/tea', function(){
+  dd(Input::all());
+});
 
 Route::get('/', function () {
     return view('pages.welcome');
@@ -32,9 +35,9 @@ Route::get('/homepage', function () {
 //new of above
 Route::resource('/tea','TeaController');
 
-// Route::get('/tea_page/{id}','ProductController@show');
+Route::get('/tea_page/{id}','ProductController@show');
 
-Route::resource('/tea/{id}', 'TeaController');
+
 
 Route::get('/teaware', function () {
    return view('pages.teaware');
