@@ -29,7 +29,7 @@ class TeaController extends Controller
         return view('pages.tea_choice', compact('teas', 'teatype'));
 
       }elseif(strpos($type, 'puerhtea') !== false) {
-        $teatype = "Puerh Tea";
+        $teatype = "Puerh";
         $teas = new \App\product;
         $teas = $teas->all()->where('type', 'puerhtea');
         return view('pages.tea_choice', compact('teas','teatype'));

@@ -24,16 +24,8 @@
                             </div>
 
                       </li>
-                      <li class="nav-item dropdown ml-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Teaware
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/teaware">Gaiwans</a>
-                          <a class="dropdown-item" href="/teaware">Teapots</a>
-                          <a class="dropdown-item" href="/teaware">Cups</a>
-                          <a class="dropdown-item" href="/teaware">Pitchers</a>
-                        </div>
+                      <li class="nav-item ml-3">
+                        <a class="nav-link" href="/teaware">Teaware</a>
                       </li>
 
                       <li class="nav-item ml-3">
