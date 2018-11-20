@@ -21,7 +21,7 @@
               <div class="col-3">
                 <h3 class="text-center text-secondary pb-3 mt-2">White Tea</h3>
                 <div class="card card-center border-none">
-                  <a href="tea?type=whitetea"><img class="card-img-top" src="images/bai-mu-dan-white.jpg" alt="Card image cap"></a>
+                  <a href="tea?type=whitetea"><img class="card-img-top" src="images/whitetea/bai-mu-dan-white.jpg" alt="Card image cap"></a>
                   <div class="card-body">
 
                   </div>
@@ -32,7 +32,7 @@
                 <h3  class="text-center text-secondary pb-3 mt-2">Green Tea</h3>
 
                 <div class="card card-center">
-                  <a href="tea?type=greentea"><img class="card-img-top" src="images/dragon-well.jpg" alt="Card image cap"></a>
+                  <a href="tea?type=greentea"><img class="card-img-top" src="images/greentea/dragon-well.jpg" alt="Card image cap"></a>
                   <div class="card-body">
 
                   </div>
@@ -43,7 +43,7 @@
                 <h3 class="text-center text-secondary  pb-3 mt-2">Black Tea</h3>
 
                 <div class="card card-center">
-                  <a href="tea?type=blacktea"><img class="card-img-top" src="images/black-tea-2.jpg" alt="Card image cap"></a>
+                  <a href="tea?type=blacktea"><img class="card-img-top" src="images/blacktea/black-tea-2.jpg" alt="Card image cap"></a>
                   <div class="card-body">
 
                   </div>
@@ -54,7 +54,7 @@
                 <h3 class="text-center text-secondary  pb-3 mt-2">Puerh Tea</h3>
 
                 <div class="card card-center">
-                  <a href="tea?type=puerhtea"><img class="card-img-top" src="images/shengpuer3.jpg" alt="Card image cap"></a>
+                  <a href="tea?type=puerhtea"><img class="card-img-top" src="images/puerhtea/shengpuer3.jpg" alt="Card image cap"></a>
                   <div class="card-body">
 
                   </div>
