@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="mb-3 text-center">
-          1 oz. - ${{ $tea->price }}.00
+          {{ $showoz == "yes" ? "2 oz.  -" : ""}}{{ $tea->price }}.00
         </div>
         <div class="center-button">
           <form class="" action="" method="get">

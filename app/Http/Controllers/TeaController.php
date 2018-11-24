@@ -18,27 +18,33 @@ class TeaController extends Controller
 
       if (strpos($type, 'blacktea') !== false) {
         $teatype = "Black Tea";
+        $showoz = "yes";
+
         $teas = new \App\product;
         $teas = $teas->all()->where('type', 'blacktea');
-        return view('pages.tea_choice', compact('teas','teatype'));
+        return view('pages.tea_choice', compact('teas','teatype', 'showoz'));
 
       }elseif(strpos($type, 'greentea') !== false) {
         $teatype = "Green Tea";
+        $showoz = "yes";
+
         $teas = new \App\product;
         $teas = $teas->all()->where('type', 'greentea');
-        return view('pages.tea_choice', compact('teas', 'teatype'));
+        return view('pages.tea_choice', compact('teas', 'teatype', 'showoz'));
 
       }elseif(strpos($type, 'puerhtea') !== false) {
         $teatype = "Puerh";
+        $showoz = "no";
         $teas = new \App\product;
         $teas = $teas->all()->where('type', 'puerhtea');
-        return view('pages.tea_choice', compact('teas','teatype'));
+        return view('pages.tea_choice', compact('teas','teatype', 'showoz'));
 
       }elseif(strpos($type, 'whitetea') !== false) {
         $teatype = "White Tea";
+        $showoz = "yes";
         $teas = new \App\product;
         $teas = $teas->all()->where('type', 'whitetea');
-        return view('pages.tea_choice', compact('teas','teatype'));
+        return view('pages.tea_choice', compact('teas','teatype', 'showoz'));
       }
     }
 
@@ -75,9 +81,13 @@ class TeaController extends Controller
 
       $tea = \App\product::find($id);
 
+      if ( $tea->type == "puerhtea"){
+        $showoz = "no";
+      }else{
+        $showoz = "yes";
+      }
 
-
-      return view('pages.teapage', compact('tea'));
+      return view('pages.teapage', compact('tea', 'showoz'));
 
 
 

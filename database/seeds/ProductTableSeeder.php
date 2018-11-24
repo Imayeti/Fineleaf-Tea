@@ -69,7 +69,7 @@ class ProductTableSeeder extends Seeder
       $tea->save();
 
       $tea = new \App\product;
-      $tea->name = '';
+      $tea->name = 'Dianhong';
       $tea->type = 'blacktea';
       $tea->full_description = "Dianhong is a type of black tea made predominantly with the buds of the Assamica tea varieties in Yunnan province. They produce, light, malty and smooth black teas with warm and sweet aromas. This Dianhong comes from Fengqing which I think produces some of the best quality Dianhong in Yunnan province. This tea is soft and velvety with fabulous warm, malty baked notes and a cooling menthol finish. ";
       $tea->short_description = 'Fengqing Black tea made with a predominance of buds for a lighter tea.';
@@ -78,7 +78,7 @@ class ProductTableSeeder extends Seeder
       $tea->save();
 
       $tea = new \App\product;
-      $tea->name = '';
+      $tea->name = ' Yunnan Black';
       $tea->type = 'blacktea';
       $tea->full_description = "Yunnan Province is home of  some of the finest Black teas in the world (actually some of the finest of many types of tea). It is the spiritual mother province of tea and is one of our favourite partsof the world for tea hunting. This tea is a great introduction to one of the more bold Chinese Black teas made from the Assamica variety (as opposed to the more delicate Sinensis Black teas from Fujian).";
       $tea->short_description = 'Rich Black tea made from the Yunnan Da Ye Zhong cultivar. ';
@@ -105,7 +105,7 @@ class ProductTableSeeder extends Seeder
       $tea->full_description = 'Get ready for an intense Umami (rich and savoury) taste and super thick mouthfeel. Gyokuro is made from heavily shaded green tea. In the same way as growing Tencha (to make Matcha), the shading stops the leaves from converting Theanine to Catechins and increases the amount of Chlorophyll. The resulting high Theanine content in the tea means that you get a huge mouthful of mood enhancing umami in your cup!';
       $tea->short_description = 'Top shelf, hand picked Gyokuro.';
       $tea->img_src = "/images/greentea/gyukuro.jpg";
-      $tea->price = 18.00;
+      $tea->price = 21.00;
       $tea->save();
 
       $tea = new \App\product;
@@ -123,7 +123,7 @@ class ProductTableSeeder extends Seeder
       $tea->full_description = 'Taiping Hou Kui is a deceptive tea because it has such large leaves but the flavour is so fragrant and delicate. Consistently voted one of China\'s top ten teas, Hou Kui is a special tea made in Tai Ping county from the larger and pointy Shi Da cultivar. This tea is different from other Green teas in that the larger the leaf, the better the tea is considered to be.';
       $tea->short_description = 'A special fully handmade batch of Taiping Hou Kui Green tea';
       $tea->img_src = "/images/greentea/houkui.jpg";
-      $tea->price = 18.00;
+      $tea->price = 25.00;
       $tea->save();
 
       $tea = new \App\product;
@@ -216,32 +216,197 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
       $tea->save();
 
       $tea = new \App\product;
-      $tea->name = '';
+      $tea->name = 'Mengku';
       $tea->type = 'puerhtea';
-      $tea->full_description = "";
-      $tea->short_description = "";
-      $tea->img_src = "/images/puerhtea/.jpg";
-      $tea->price = 13.00;
+      $tea->full_description = "This is a 2004 pressing by the Wan Shun Hao brand, a small Mengku area producer.  It's spring harvest tea from the Big Snow Mountain area of Mengku, and although the characters on the wrapper proclaim it as 'Millenial Old Tree' (千年老树), it's most likely just tea from bushes or trees (not super old trees).  The brewed tea leaves are large and burly, with big meaty stems, so it's most definitely a quality production.";
+      $tea->short_description = "2004 Mengku Raw Puerh";
+      $tea->img_src = "/images/puerhtea/mengku.jpg";
+      $tea->price = 70.00;
       $tea->save();
 
       $tea = new \App\product;
-      $tea->name = '';
+      $tea->name = '2005 Yi Wu Cha Yuan';
       $tea->type = 'puerhtea';
-      $tea->full_description = "";
-      $tea->short_description = "";
-      $tea->img_src = "/images/puerhtea/.jpg";
-      $tea->price = 13.00;
+      $tea->full_description = "A small production from a family producer in Yi Wu town.  This has been aged for 10 years in tropical Jinghong town of Xishuangbanna Prefecture (Yunnan).  The tea cake is produced entirely from Spring 2005 harvested Yi Wu area tea and then stone-pressed in the traditional way. The storage condition has given this tea a red tea soup and sweet camphor and mushroom taste and feel.  The tea is still characteristically Yi Wu.  Smooth with a robust cha qi this is a perfect cake for those seeking something aged with complexity while still retaining the needed character/quality for further aging and improvement.";
+      $tea->short_description = "2005 Yi Wu Cha Yuan Big Green Tree Raw Pu-erh tea cake";
+      $tea->img_src = "/images/puerhtea/yiwu.jpg";
+      $tea->price = 57.00;
       $tea->save();
 
       $tea = new \App\product;
-      $tea->name = '';
+      $tea->name = '2007 Feng Qing';
       $tea->type = 'puerhtea';
-      $tea->full_description = "";
-      $tea->short_description = "";
-      $tea->img_src = "/images/puerhtea/.jpg";
-      $tea->price = 13.00;
+      $tea->full_description = "This is a spring 2007 pressing done in a small Feng Qing area tea factory and then aged in a dry storage condition in Guangzhou until August 2018 when it was purchased by us. This is a very nicely aged raw pu-erh tea that displays just how nicely raw pu-erh made from Feng Qing (a county in Lincang) material can do well if stored corsectly. Sweet and viscous with a spicy aged feeling.  Nice golden orange tea soup and still a decent amount of bitter and astringent.  An excellent every day drinking semi-aged sheng that could also be aged further.  ";
+      $tea->short_description = "2007 Feng Qing Zao Chun Yin Hao Raw Pu-erh Tea Cake";
+      $tea->img_src = "/images/puerhtea/fengqing.jpg";
+      $tea->price = 40.00;
       $tea->save();
 
+      //white teas
+
+      $tea = new \App\product;
+      $tea->name = 'Silver Needle';
+      $tea->type = 'whitetea';
+      $tea->full_description = "Very early spring picked silver beige buds producing a luscious, thick and soft liquor. Summer meadow flowers and dry grass with sweet, ripe cantaloupe. The process to make the tea sounds incredibly simple - pluck the buds and lay them out until dry. But this simplicity means that there is no place for the farmers to hide and the tiniest factors can reduce the quality of the tea.";
+      $tea->short_description = "luscious, thick and soft white tea";
+      $tea->img_src = "/images/whitetea/silverneedle.jpg";
+      $tea->price = 19.00;
+      $tea->save();
+
+      $tea = new \App\product;
+      $tea->name = 'White Peony';
+      $tea->type = 'whitetea';
+      $tea->full_description = "White Peony (Bai Mu Dan) is often classed as the second highest grade white tea below Silver Needle and we think that this is nonsense. These are two very different tasting teas and both should be rightly hailed as immaculate. White Peony is made combining the Silver Needle buds with larger leaves. The tea is then withered and dried allowing for some natural oxidation which turns the leaves dark and brittle.";
+      $tea->short_description = "Gold, soft, thick and syrupy white tea";
+      $tea->img_src = "/images/whitetea/whitepeony.jpg";
+      $tea->price = 16.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = 'Moonlight White';
+      $tea->type = 'whitetea';
+      $tea->full_description = "A fascinating White tea made from Old tea trees in Jinggu Yunnan. The tea trees are around 100 years old and are probably Camellia Taliensis which makes it a very unique tea since 99.9% of tea is made from Camellia Sinensis varieties. This tea has been picked during the day and then dried indoors with hot air. Withering fresh leaves and drying in this way does take longer time than drying in the sun but that gives the tea that extra level of oxidation and sweetness.";
+      $tea->short_description = "Syrupy with sweet white tea with a minty coolness.";
+      $tea->img_src = "/images/whitetea/moonlightwhite.jpg";
+      $tea->price = 20.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = 'Fuding Silver Needle';
+      $tea->type = 'whitetea';
+      $tea->full_description = "Anybody who is remotely interested in White tea will know that Fuding in Fujian is revered for producing arguably the best White teas in the world and is highly collected by tea lovers. This is a next level Fuding Silver Needle aged since 2016. Starfruit and honeydew melon move to hay, marzipan and orange blossom cream.";
+      $tea->short_description = "Silver Needle white tea aged since 2016";
+      $tea->img_src = "/images/whitetea/fudingsilverneedle.jpg";
+      $tea->price = 25.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = 'White Jasmine';
+      $tea->type = 'whitetea';
+      $tea->full_description = " Buds of the Da Bai tea cultivar are carefully handpicked in spring and allowed to dry in the sun. The tea is then covered in freshly picked jasmine and allowed to infuse overnight. The dried jasmine flowers are removed and the process is repeated up to seven times to create an intense floral aroma. The flavour of this White tea continues to express itself and the result is a powerfully aromatic tea with the soft and velvety texture of a good Silver Needle.";
+      $tea->short_description = "White tea buds scented with fresh Jasmine flowers. ";
+      $tea->img_src = "/images/whitetea/whitejasmine.jpg";
+      $tea->price = 26.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = '2004 Fuding Bai Mu Dan';
+      $tea->type = 'whitetea';
+      $tea->full_description = " Aged since 2004 in relatively airtight containers, the tea has been allowed to very slowly ferment into an ambrosial nectar. It has those honey and plummy notes that you would expect from an aged White (like many others), however, it is the bright, fresh and juicy notes which impressed us as well as its long taste and textured mouthfeel.";
+      $tea->short_description = "Sticky and syrupy 2004 aged White tea blend from Fuding";
+      $tea->img_src = "/images/whitetea/baimudancake.jpg";
+      $tea->price = 17.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = 'Chrysanthemum White';
+      $tea->type = 'whitetea';
+      $tea->full_description = "Fragrant combination of Jasmine Silver Needle and Chrysanthemum. Flavor notes akin to wild strawberries, sweet flowers and river pebbles.";
+      $tea->short_description = "Jasmine Silver Needle and Chrysanthemum";
+      $tea->img_src = "/images/whitetea/whiteblossom.jpg";
+      $tea->price = 16.00;
+      $tea->save();
+
+
+      $tea = new \App\product;
+      $tea->name = 'Ya Bao';
+      $tea->type = 'whitetea';
+      $tea->full_description = "Ya Bao is a special bud tea made from the ancillary buds of wild tea trees growing in the Western border of Yunnan. These tea trees (Assamica Dehongensis) can be used to make Yunnan Black and PuErh tea but in late Winter some of the ancillary buds are picked in small quantities. The ancillary or lateral buds are the first shoots of the year which will become stems. This is different to the terminal buds used in most tea production (which will become leaves). These ancillary buds have a unique cone layered appearance and have to be picked sparingly otherwise the tea trees will not grow enough branches.";
+      $tea->short_description = "The precious lateral buds of wild PuErh trees picked in late winter";
+      $tea->img_src = "/images/whitetea/elderwhite.jpg";
+      $tea->price = 23.00;
+      $tea->save();
+
+
+      //teaware -------------------------------------------------------------------------------------------
+      $teaware = new \App\product;
+      $teaware->name = 'Zhang Chaozhou Clay';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "This 120ml pot is fully handmade from authentic Chaozhou red clay by the Zhang studio in the timeless Xi Shi shape. No moulds were used but instead, this is designed by eye and crafted using hands and manual tools for the ultimate level of detail. Each pot has been made individually for the pinnacle of clay pot brewing. They will all have their own unique character.zhang";
+      $teaware->short_description = "Fully handmade 120ml Chaozhou Clay teapot ";
+      $teaware->img_src = "/images/teaware/zhangclayteapot.jpg";
+      $teaware->price = 90.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Blue Gaiwan';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "This gaiwan has a beautiful light blue colour which shows off tea and matt brown edging for visual appeal and grip. The colours are sleek (none of the traditional Chinese designs) and modern and it is simply a beautiful piece of teaware to add to your collection. This Gaiwan is 150ml which is the perfect sessioning size for 2-4 people while being an excellent partner for solo brewing (use a little less leaf and don't fill water to the top). We think that this is the most versatile size to have in your home and then you can add 70-100ml teaware for solo brewing or horizontal tastings.";
+      $teaware->short_description = " De Hua porcelain Gaiwan";
+      $teaware->img_src = "/images/teaware/bluegaiwan.jpg";
+      $teaware->price = 30.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Blue Gong Dao Bei';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "A perfect matching Gong Dao Bei (fairness cup) for the Blue Gaiwan and Blue Cups although it will mix and match with most other Pots and Gaiwans.
+
+Made from De Hua porcelain which is luxurious and relatively thin to give your tea sessions the aesthetics worthy of your tea.
+
+The opening fits all Chinese strainers and, even though it has subtle, short spout, it has a great drip free pour.";
+      $teaware->short_description = "";
+      $teaware->img_src = "/images/teaware/bluegongdaobei.jpg";
+      $teaware->price = 16.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Blue Cups';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "Thin porcelain is timeless and pure class when drinking tea. The thinness gives a look and feel of elegance whilst allowing the tea to cool quickly for the perfect tasting temperature. This tulip shaped cup provides the perfect balance. Easy to drink, stable and rich in aromatics especially if you do not fill too high up the cup.";
+      $teaware->short_description = "tulip shaped porcelain cups";
+      $teaware->img_src = "/images/teaware/bluecups.jpg";
+      $teaware->price = 20.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Tea Pick';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "While our Sandalwood Tea Pick is a great tool for breaking into most cakes, there are many cakes which are tightly pressed and therefore require a smaller tool. A sharper and tinner tea cake pick will reduce the amount of leaf breakage and make your sessions easier.
+
+This tea pick has a lovely thin blade with a flat point to slide into the most stubborn tea cakes. The stainless steel has a contour pattern for added aesthetics.";
+      $teaware->short_description = "Sandlwood stainless steel tea pick";
+      $teaware->img_src = "/images/teaware/teapick.jpg";
+      $teaware->price = 35.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Glass Gaiwan';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "This is the perfect Gaiwan to start Gaiwan brewing especially for Green tea. Because it is made out of glass it allows you watch the tea brew and the leaves soften and open.
+
+Please be aware that this Gaiwan is suited to Green, White and small leaf Black tea because it is meant to be for brewing teas that require a lower water temperature. The glass releases heat fairly quickly ensuring that the teas do not extract too strongly. This Gaiwan is not for boiling water brewing as it becomes too hot to hold safely.";
+      $teaware->short_description = "Glass Gaiwan suitable for Green and other light teas.";
+      $teaware->img_src = "/images/teaware/glassgaiwan.jpg";
+      $teaware->price = 18.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Kyusu';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "A beautiful, sleek, minimal and tactile kyusu handmade in Tokoname from a speckled cream stone.
+
+This 300ml kyusu is the perfect Japanese or Gong Fu brewing companion. It is the perfect size for brewing solo or up to 4 people and looks great in any setup.
+
+This stoneware has a smooth yet textured feel in the hands. It is a joy to brew with a nicely angled spout for a convenient right handed pouring action.";
+      $teaware->short_description = "A beautiful, sleek, minimal and tactile kyusu";
+      $teaware->img_src = "/images/teaware/kyusu.jpg";
+      $teaware->price = 35.00;
+      $teaware->save();
+
+      $teaware = new \App\product;
+      $teaware->name = 'Glass Gong Dao Bei';
+      $teaware->type = 'teaware';
+      $teaware->full_description = "When you want to show off your tea to its full potential, this is a fabulous Gong Dao Bei (fairness cup). Made from thick, high quality glass, this Gong Dao Bei has a solid luxury feel and a clean pouring with no dribbles! The hammered glass diffracts the light beautifully, allowing you to inspect the colour of the tea liquor but with an abstract texture.";
+      $teaware->short_description = "Stylish and thick hammered glass Gong Dao Bei";
+      $teaware->img_src = "/images/teaware/glassgongdaobei.jpg";
+      $teaware->price = 20.00;
+      $teaware->save();
 
 
     }

@@ -19,96 +19,31 @@
 
 
 
-<div class="row container " style=" margin: 0 auto;">
+  <div class="row container " style=" margin: 0 auto;">
+    @foreach($teaware as $item)
 
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
-        <div class="card card-center border-none">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text text-center">Yixing Clay Gaiwan</p>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+          <div class="card card-center border-none">
+            <a href="teaware/{{$item->id}}"><img class="card-img-top" src="{{ $item->img_src }}" alt="{{ $item->short_description }}"></a>
+            <div class="card-body">
+              <p class="card-text text-center">{{ $item->name }}</p>
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+             ${{ $item->price }}.00
+          </div>
+          <div class="center-button">
+            <form class="" action="" method="get">
+              <button type="submit" class="btn btn-light">Add To Cart</button>
+            </form>
+
           </div>
         </div>
-        <div class="mb-3 text-center">
-          $25.00
-        </div>
-        <div class="center-button">
-          <button type="button" class="btn btn-light">Add To Cart</button>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
 
 
-</div>
+        @endforeach
 
-
-<div class="row container " style=" margin: 0 auto;">
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/gaiwan.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Yixing Clay Gaiwan</p>
-          </div>
-        </div>
-      </div>
-</div>
-
-
-
+  </div>
 
 
 

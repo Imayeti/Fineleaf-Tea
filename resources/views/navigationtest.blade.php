@@ -34,8 +34,10 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav  ml-auto">
                         <!-- Authentication Links -->
+                      <a href="/shopping_cart"><i class="fas fa-shopping-cart mr-3 ml-5"></i></a>
+
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}"><p class="small-txt ">Login</p></a>

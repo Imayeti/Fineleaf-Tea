@@ -259,8 +259,14 @@ h3 {
 
 
 
+.fulldiv {
+  height:73vh;
 
-
+}
+.halfdiv {
+  height:58vh;
+  // display: inline-block
+}
 
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;

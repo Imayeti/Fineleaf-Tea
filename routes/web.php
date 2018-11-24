@@ -35,13 +35,12 @@ Route::get('/homepage', function () {
 //new of above
 Route::resource('/tea','TeaController');
 
-Route::get('/tea_page/{id}','ProductController@show');
+// Route::get('/tea_page/{id}','ProductController@show');
 
 
 
-Route::get('/teaware', function () {
-   return view('pages.teaware');
-});
+Route::resource('/teaware', 'TeawareController');
+
 
 
 Route::get('/shopping_cart', function () {

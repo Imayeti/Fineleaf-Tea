@@ -9,6 +9,7 @@
 
 
 <h1 class="text-center mt-5 mb-4">Cart</h1>
+<div class="">
 
 
 
@@ -70,5 +71,6 @@
 
 
 
+</div>
 
 @endsection

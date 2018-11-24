@@ -10700,6 +10700,14 @@ h3 {
   color: #31a8c2;
 }
 
+.fulldiv {
+  height: 73vh;
+}
+
+.halfdiv {
+  height: 58vh;
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
   color: #fff;

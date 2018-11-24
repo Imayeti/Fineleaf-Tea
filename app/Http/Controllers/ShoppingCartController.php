@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TeawareController extends Controller
+class ShoppingCartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,11 +13,7 @@ class TeawareController extends Controller
      */
     public function index()
     {
-
-      $teaware = new \App\product;
-      $teaware = $teaware->all()->where('type', 'teaware');
-      return view('pages.teaware', compact('teaware'));
-
+        //
     }
 
     /**
@@ -49,12 +45,7 @@ class TeawareController extends Controller
      */
     public function show($id)
     {
-      $teaware= \App\product::find($id);
-
-
-
-      return view('pages.teawareitem', compact('teaware'));
-
+        //
     }
 
     /**

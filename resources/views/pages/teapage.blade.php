@@ -28,7 +28,7 @@
       </div>
 
       <div class="float-right" style="font-size: 17px;">
-        1 oz. - ${{ $tea->price }}.00<button type="button" class="btn btn-light ml-5 mr-4">Add To Cart</button>
+      {{ $showoz == "yes" ? "2 oz.  -" : "2oo gram cake - "}}${{ $tea->price }}.00<button type="button" class="btn btn-light ml-5 mr-4">Add To Cart</button>
       </div>
 
       </div>
