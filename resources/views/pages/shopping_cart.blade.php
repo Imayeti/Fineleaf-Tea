@@ -12,18 +12,22 @@
 <div class="">
 
 
+  @for($i = 0; $i < count($userProductArray); $i++)
+      <p>{{ $productTable->all()->where('id', $userProductArray[$i]) }}</p>
+
+  @endfor
 
   <table  id="t01" align="right" class="table">
     <tbody>
     <tr class="border-bottom">
-      <th class="pl-5">PRODUCT</th>
+      <th class="pl-5">PRODUCTS</th>
       <th>&nbsp</th>
       <th>PRICE</th>
 
     </tr>
     <tr class="border-bottom">
       <td ><image class="ml-4 mr-5"src="images/Assam.jpg" style="max-width:75px;">Green Tea</td>
-      <td >Light Nutty Green</td>
+      <td ></td>
       <td>$15.00</td>
 
     </tr>

@@ -13,7 +13,22 @@ class ShoppingCartController extends Controller
      */
     public function index()
     {
+        $user = \Auth::user();
+        $userProductArray = $user->products;
+
+
+        $productTable = new \App\product;
+        // $product = $product->all()->where('id', $usersproducts);
+        // $product = $product->first();
+
         //
+        // $user = \Auth::user();
+        // $usersproducts = $user->products;
+        // foreach($products as $product){
+        //
+        // }
+        // $firstProduct = $products[2];
+        return view('pages.shopping_cart', compact('userProductArray', 'productTable'));
     }
 
     /**
@@ -34,7 +49,7 @@ class ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

@@ -43,9 +43,9 @@ Route::resource('/teaware', 'TeawareController');
 
 
 
-Route::get('/shopping_cart', function () {
-   return view('pages.shopping_cart');
-});
+Route::resource('/shopping_cart', 'ShoppingCartController');
+
+
 
 Route::get('/sign_up', function () {
    return view('pages.sign_up');
