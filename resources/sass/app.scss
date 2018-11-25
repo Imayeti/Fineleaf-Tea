@@ -1,4 +1,9 @@
 
+$theme-colors: (
+  "primary": #d7fefa,
+  "light": #efefef
+);
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -11,4 +16,280 @@
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.small-txt {
+  font-size: 15px;
+
+}
+
+body {
+  font-family: 'Cinzel', serif;
+
+background-color: white;
+}
+
+.background-image {
+  /* display: inline-block; */
+  width: 100%;
+  height: auto;
+  /* background-size: cover;
+  background-position: center;
+  background-color: red;
+  background-image: url(images/tea-mountain.jpg); */
+ }
+
+
+.navbackground {
+  background-color: 	#F6F5F5;
+}
+
+
+.navbar {
+ min-height: 80px;
+ font-size: 20px;
+ color: #353535;
+
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+.navbar-toggle {
+ /* (80px - button height 34px) / 2 = 23px */
+ margin-top: 23px;
+ padding: 9px 10px !important;
+}
+
+
+
+
+.center-block2 {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+
+
+
+}
+
+.teatext {
+  /* margin: auto; */
+
+  /* margin-right: 10px; */
+ margin-top: 110px;
+ /* padding-right: 30px; */
+}
+
+.faded-pic {
+    opacity: 0.2;
+    filter: alpha(opacity=50);
+}
+
+.navbar a {
+
+    color: black;
+    /* background-color: #F6F5F5; */
+}
+
+.navbarTextBackground {
+  background-color: white;
+}
+
+.card-center {
+
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+
+}
+
+.card {
+  border: none;
+
+}
+
+.center-it {
+margin-left: auto;
+
+
+
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+
+}
+
+.glass:hover {
+ filter: brightness(50%);
+}
+
+.card-shadow {
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+.table{
+  th{vertical-align: middle;}
+
+  td{vertical-align: middle;}
+}
+
+.btn {
+  border-radius: 0;
+  background-color: #353535;
+  color: white;
+}
+
+
+
+
+
+
+/* .bg {
+  background: url('images/tea-mountain.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+*/
+
+.spacer{
+  background-color: #c9d3d6;
+  min-height: 400px;
+}
+
+#sign-up-form{
+
+  * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+
+  background-color: #ffffff;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.background-pic {
+
+  background-image: url("/images/map.jpg");
+
+}
+
+
+h3 {
+  color: #31a8c2;
+}
+
+
+
+.fulldiv {
+  height:73vh;
+
+}
+.halfdiv {
+  height:58vh;
+  // display: inline-block
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #efefef;
+}
+
+
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
 }

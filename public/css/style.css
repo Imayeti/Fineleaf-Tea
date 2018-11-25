@@ -1,3 +1,20 @@
+
+
+body {
+font-family: 'Fahkwang', sans-serif;
+}
+
+.background-image {
+  /* display: inline-block; */
+  width: 100%;
+  height: auto;
+  /* background-size: cover;
+  background-position: center;
+  background-color: red;
+  background-image: url(images/tea-mountain.jpg); */
+ }
+
+
 .navbackground {
   background-color: 	#F6F5F5;
 }
@@ -22,18 +39,8 @@
  padding: 9px 10px !important;
 }
 
-@media (min-width: 768px) {
- .navbar-nav > li > a {
-   /* (80px - line-height of 27px) / 2 = 26.5px */
-   padding-top: 26.5px;
-   padding-bottom: 26.5px;
-   line-height: 27px;
- }
-}
 
-body {
-font-family: 'Raleway', sans-serif;
-}
+
 
 .center-block2 {
   display: block;
@@ -47,11 +54,13 @@ font-family: 'Raleway', sans-serif;
 
 .teatext {
   /* margin: auto; */
-  margin-right: 50px;
-  margin-top: 110px;
+
+  /* margin-right: 10px; */
+ margin-top: 110px;
+ /* padding-right: 30px; */
 }
 
-.fadedPic {
+.faded-pic {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
@@ -65,3 +74,51 @@ font-family: 'Raleway', sans-serif;
 .navbarTextBackground {
   background-color: white;
 }
+
+.card-center {
+
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+
+}
+
+.card {
+  border: none;
+
+}
+
+.center-it {
+margin-left: auto;
+
+
+
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+
+}
+
+.glass:hover {
+ filter: brightness(50%);
+}
+
+.card-shadow {
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+
+
+
+/* .bg {
+  background: url('images/tea-mountain.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+*/
