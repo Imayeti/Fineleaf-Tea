@@ -28,10 +28,11 @@ class ShoppingCartController extends Controller
             array_push($temp,  $product);
 
           }
-
+          $subtotal = 0;
+          foreach ($temp as $product) {$subtotal += $product->price * $product->quantity;}
             // $userProducts = \DB::table('products')->whereIn('id', $userProductArray)->get();
-
-        return view('pages.shopping_cart', compact('temp'));
+          $total = $subtotal + 10;
+        return view('pages.shopping_cart', compact('temp','subtotal','total'));
     }
 
     /**

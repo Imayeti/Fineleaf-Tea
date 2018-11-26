@@ -11,29 +11,25 @@
 <h1 class="text-center mt-5 mb-4">Cart</h1>
 <div class="">
 
-@foreach ($temp as $product)
-  <h1>{{ $product->name }}{{$product->quantity}}</h1>
-@endforeach
+
   <table  id="t01" align="right" class="table">
     <tbody>
     <tr class="border-bottom">
       <th class="pl-5">PRODUCTS</th>
-      <th>&nbsp</th>
+      <th>QUANTITY</th>
       <th>PRICE</th>
-
+      <th>TOTAL</th>
+@foreach ($temp as $product)
     </tr>
     <tr class="border-bottom">
-      <td ><image class="ml-4 mr-5"src="images/Assam.jpg" style="max-width:75px;">Green Tea</td>
-      <td ></td>
-      <td>$15.00</td>
-
+      <td ><image class="ml-4 mr-5"src="{{ $product->img_src }}" style="max-width:75px;">{{ $product->name }}&nbsp&nbsp-&nbsp&nbsp{{ $product->short_description}}</td>
+      <td >{{ $product->quantity }}</td>
+      <td>${{ $product->price }}.00</td>
+      <td>${{ $product->price * $product->quantity }}.00</td>
     </tr>
-    <tr>
-      <td ><image class="ml-4 mr-5"src="images/Assam.jpg" style="max-width:75px;">Black Tea</td>
-      <td>Malty Dark Delicious</td>
-      <td>$12.00</td>
+@endforeach
 
-    </tr>
+
   </tbody>
 <tfoot>
 
@@ -49,7 +45,7 @@
     <tr class="border-0">
       <td class="border-top-0" >&nbsp</td>
       <td>SUBTOTAL</td>
-      <td>$27.00</td>
+      <td>${{$subtotal}}.00 </td>
 
     </tr>
     <tr>
@@ -61,7 +57,7 @@
     <tr>
       <td class="border-top-0">&nbsp</td>
       <td>TOTAL</td>
-      <td>$37.00</td>
+      <td>${{$total}}.00</td>
 
     </tr>
   </tfoot>
