@@ -27,8 +27,8 @@
         <hr width="80%" class="center-block ">
       </div>
 
-      <div class="float-right" style="font-size: 17px;">
-      {{ $showoz == "yes" ? "2 oz.  -" : "2oo gram cake - "}}${{ $tea->price }}.00<button type="button" class="btn btn-light ml-5 mr-4">Add To Cart</button>
+      <div class="float-right clearfix text-align" >
+      {{ $showoz == "yes" ? "2 oz.  -" : "2oo gram cake - "}}${{ $tea->price }}.00<button type="button" class="btn btn-light ml-5 mr-4 no-margin">Add To Cart</button>
       </div>
 
       </div>

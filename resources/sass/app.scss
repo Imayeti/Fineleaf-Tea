@@ -68,10 +68,19 @@ background-color: white;
 @media screen and (max-width: 480px) {
     .teapic {
          width: 90%;
+         margin-right: 0px !important;
     }
     body {
 
-      font-size: 10px;
+      font-size: 11px;
+    }
+    .text-center{
+      text-align: center;
+    }
+
+    .no-margin {
+      margin-left: 25px !important;
+      margin-right: 0px !important;
     }
 }
 
@@ -256,7 +265,7 @@ button:hover {
 
 .background-pic {
 
-  background-image: url("/images/map.jpg");
+  background-image: url("/images/mapwithteaclub.jpg");
 
 }
 
@@ -274,7 +283,7 @@ h3 {
 // }
 
 .fulldiv {
-  height:73vh;
+  height:100vh;
 
 }
 .halfdiv {
@@ -294,16 +303,16 @@ h3 {
     outline: 0 none;
 }
 
-.btn-primary {
-    background: #0099cc;
-    color: #ffffff;
-}
+// .btn-primary {
+//     background: #0099cc;
+//     color: #ffffff;
+// }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-}
-
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
-}
+// .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+//     background: #33a6cc;
+// }
+//
+// .btn-primary:active, .btn-primary.active {
+//     background: #007299;
+//     box-shadow: none;
+// }

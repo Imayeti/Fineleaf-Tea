@@ -68,11 +68,11 @@
 
 
 
-
-<!-- <div class="background-pic " style="height: 600px;"> -->
+<!-- 
+<div class="background-pic " style="height: 600px;">
+</div> -->
 
 <img class="center pt-5" src="images/mapwithteaclub.jpg" style="max-width: 100%;">
-<!-- </div> -->
 
 <!-- <div class="bgimg faded-pic">
 <img src="images/map.jpg" style="max-width: 100%">

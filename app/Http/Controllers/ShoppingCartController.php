@@ -14,23 +14,24 @@ class ShoppingCartController extends Controller
     public function index()
     {
 
+
+
+
           $user = \Auth::user();
           $userProductArray = $user->products;
+          // dd($userProductArray);
+//build up my own array of the data called $temp by looping through by finding by id from the json
+          $temp=array();
+          foreach($userProductArray as $item){
+            $product = \App\product::find($item['product']);
+            $product->quantity = $item['quantity'];
+            array_push($temp,  $product);
 
+          }
 
-          $productTable = new \App\product;
+            // $userProducts = \DB::table('products')->whereIn('id', $userProductArray)->get();
 
-        // $product = $product->all()->where('id', $usersproducts);
-        // $product = $product->first();
-
-        //
-        // $user = \Auth::user();
-        // $usersproducts = $user->products;
-        // foreach($products as $product){
-        //
-        // }
-        // $firstProduct = $products[2];
-        return view('pages.shopping_cart', compact('userProductArray', 'productTable'));
+        return view('pages.shopping_cart', compact('temp'));
     }
 
     /**

@@ -11,12 +11,9 @@
 <h1 class="text-center mt-5 mb-4">Cart</h1>
 <div class="">
 
-
-  @for($i = 0; $i < count($userProductArray); $i++)
-      <p>{{ $productTable->all()->where('id', $userProductArray[$i]) }}</p>
-
-  @endfor
-
+@foreach ($temp as $product)
+  <h1>{{ $product->name }}{{$product->quantity}}</h1>
+@endforeach
   <table  id="t01" align="right" class="table">
     <tbody>
     <tr class="border-bottom">
