@@ -65,7 +65,15 @@ background-color: white;
 }
 
 
+@media screen and (max-width: 480px) {
+    .teapic {
+         width: 90%;
+    }
+    body {
 
+      font-size: 10px;
+    }
+}
 
 .center-block2 {
   display: block;
@@ -257,7 +265,13 @@ h3 {
   color: #31a8c2;
 }
 
-
+// .navbar-nav li a {
+//  line-height: 38px;
+// }
+// .navbar-nav li a p {
+//   line-height: 10px;
+//
+// }
 
 .fulldiv {
   height:73vh;

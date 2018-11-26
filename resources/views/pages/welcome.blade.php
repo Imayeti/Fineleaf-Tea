@@ -18,7 +18,7 @@
 
         <div class="row container mt-5 pt-3 pb-5" style=" margin: 0 auto;">
 
-              <div class="col-3">
+              <div class="col-md-3 col-xs-4">
                 <h3 class="text-center text-secondary pb-3 mt-2">White Tea</h3>
                 <div class="card card-center border-none">
                   <a href="tea?type=whitetea"><img class="card-img-top" src="images/whitetea/bai-mu-dan-white.jpg" alt="Card image cap"></a>
@@ -28,7 +28,7 @@
                 </div>
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3 col-xs-4">
                 <h3  class="text-center text-secondary pb-3 mt-2">Green Tea</h3>
 
                 <div class="card card-center">
@@ -39,7 +39,9 @@
                 </div>
               </div>
 
-              <div class="col-3">
+
+
+              <div class="col-md-3 col-xs-4">
                 <h3 class="text-center text-secondary  pb-3 mt-2">Black Tea</h3>
 
                 <div class="card card-center">
@@ -50,7 +52,7 @@
                 </div>
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3 col-xs-4">
                 <h3 class="text-center text-secondary  pb-3 mt-2">Puerh Tea</h3>
 
                 <div class="card card-center">
