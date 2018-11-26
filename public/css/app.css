@@ -10513,6 +10513,16 @@ body {
   padding: 9px 10px !important;
 }
 
+@media screen and (max-width: 480px) {
+  .teapic {
+    width: 90%;
+  }
+
+  body {
+    font-size: 10px;
+  }
+}
+
 .center-block2 {
   display: block;
   margin-left: auto;

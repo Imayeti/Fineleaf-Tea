@@ -11,7 +11,7 @@
     <div class="row container-fluid pt-4" style="min-height:520px;">
 
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="center-block2" src="{{ $tea->img_src }}" width="400px" alt="raw puer">
+        <img class="center-block2 teapic" src="{{ $tea->img_src }}" width="400px" alt="raw puer">
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 teatext">

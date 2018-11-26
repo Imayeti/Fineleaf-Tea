@@ -13,11 +13,13 @@ class ShoppingCartController extends Controller
      */
     public function index()
     {
-        $user = \Auth::user();
-        $userProductArray = $user->products;
+
+          $user = \Auth::user();
+          $userProductArray = $user->products;
 
 
-        $productTable = new \App\product;
+          $productTable = new \App\product;
+
         // $product = $product->all()->where('id', $usersproducts);
         // $product = $product->first();
 

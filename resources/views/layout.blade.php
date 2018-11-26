@@ -14,7 +14,7 @@
   </head>
   <body >
 
-      @include('navigationtest')
+      @include('navigation')
 
 
 

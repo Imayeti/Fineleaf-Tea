@@ -43,7 +43,7 @@ Route::resource('/teaware', 'TeawareController');
 
 
 
-Route::resource('/shopping_cart', 'ShoppingCartController');
+Route::resource('/shopping_cart', 'ShoppingCartController')->middleware('auth');
 
 
 
