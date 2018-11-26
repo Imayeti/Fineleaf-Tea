@@ -53,7 +53,7 @@ class ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-
+      dd('store');
     }
 
     /**
@@ -64,7 +64,7 @@ class ShoppingCartController extends Controller
      */
     public function show($id)
     {
-        //
+        dd('show');
     }
 
     /**
@@ -75,7 +75,7 @@ class ShoppingCartController extends Controller
      */
     public function edit($id)
     {
-        //
+        dd('edit');
     }
 
     /**
@@ -87,7 +87,7 @@ class ShoppingCartController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        dd('here');
     }
 
     /**

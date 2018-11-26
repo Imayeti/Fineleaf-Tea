@@ -10531,6 +10531,15 @@ body {
     margin-left: 25px !important;
     margin-right: 0px !important;
   }
+
+  .zero-margins {
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+  }
+}
+
+.marginleft {
+  margin-right: auto;
 }
 
 .center-block2 {
