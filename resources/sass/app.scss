@@ -23,6 +23,8 @@ $theme-colors: (
 
 }
 
+
+
 .smfas { transform: scale(.7,.7); }
 
 body {
@@ -88,6 +90,16 @@ background-color: white;
       margin-left: 0px !important;
       margin-right: 15px !important;
     }
+    .display-none{
+      display: none;
+    }
+    .display-on-small{
+      display: block !important;
+    }
+}
+
+.display-off-large{
+  display: none;
 }
 
 .marginleft{
