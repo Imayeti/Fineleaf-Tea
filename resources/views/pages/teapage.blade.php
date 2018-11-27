@@ -97,7 +97,6 @@
   </div>
 @endif
 
-
 @include('carousel')
 
 @endsection

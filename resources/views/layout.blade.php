@@ -22,6 +22,7 @@
 
       @yield('content')
 
+
       @include('footer')
 
     <!-- Optional JavaScript -->

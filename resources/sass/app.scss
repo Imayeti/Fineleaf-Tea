@@ -90,15 +90,15 @@ background-color: white;
       margin-left: 0px !important;
       margin-right: 15px !important;
     }
-    .display-none{
+    .display-off-when-small{
       display: none;
     }
-    .display-on-small{
+    .display-on-when-small{
       display: block !important;
     }
 }
 
-.display-off-large{
+.display-off-when-large{
   display: none;
 }
 
@@ -323,6 +323,7 @@ h3 {
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
+
 
 // .btn-primary {
 //     background: #0099cc;

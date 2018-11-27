@@ -12,7 +12,7 @@
 <div class="fulldiv">
 
 @if($userProducts)
-  <table  id="t01"  class="table display-none">
+  <table  id="t01"  class="table display-on-when-small">
     <tbody>
     <tr class="border-bottom">
       <th class="pl-5">PRODUCTS</th>
@@ -97,7 +97,7 @@
 
 
   @foreach ($temp as $product)
-      <div class="container-fluid row pb-2 display-on-small display-off-large">
+      <div class="container-fluid row pb-2 display-on-when-small display-off-when-large">
 
 
         <div class="col-md-4 col-xs-8"><image class="ml-4 mr-5 zero-margins"src="{{ $product->img_src }}" style="max-width:75px;"><strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}
@@ -124,7 +124,7 @@
 
 
   @endforeach
-  <div class="clearfix display-on-small display-off-large">
+  <div class="clearfix display-on-when-small display-off-when-large">
 
   <table class="border table mt-4 pb-4 mb-4  float-right">
         <tr>
@@ -162,8 +162,11 @@
 
 
 <div class="clearfix">
+    <form class="" action="/shopping_cart/{{ $total }}" method="get">
+      @csrf
 
-  <button type="button" class="btn float-right mb-4 mr-2" >Proceed to Checkout</button>
+      <button type="submit" class="btn float-right mb-4 mr-2" >Proceed to Checkout</button>
+    </form>
 
 </div>
 

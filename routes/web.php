@@ -59,4 +59,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/layouttest', function () {
    return view('pages.layouttest');
 });
+
+// Route::get('/checkout', function () {
+//   return view ('pages.checkout')
+// })
 //

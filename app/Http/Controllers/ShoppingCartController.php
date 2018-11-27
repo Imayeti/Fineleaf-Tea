@@ -68,7 +68,8 @@ class ShoppingCartController extends Controller
      */
     public function show($id)
     {
-        dd('show');
+
+      return view('pages.checkout', compact('id'));
     }
 
     /**

@@ -10542,16 +10542,16 @@ body {
     margin-right: 15px !important;
   }
 
-  .display-none {
+  .display-off-when-small {
     display: none;
   }
 
-  .display-on-small {
+  .display-on-when-small {
     display: block !important;
   }
 }
 
-.display-off-large {
+.display-off-when-large {
   display: none;
 }
 
