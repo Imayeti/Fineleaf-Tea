@@ -124,9 +124,9 @@
 
 
   @endforeach
-  <div class="clearfix">
+  <div class="clearfix display-on-small display-off-large">
 
-  <table class="border table mt-4 pb-4 mb-4 float-right">
+  <table class="border table mt-4 pb-4 mb-4  float-right">
         <tr>
 
   <th class="border-top-0">CART TOTALS</th>
