@@ -83,19 +83,26 @@ class ShoppingCartController extends Controller
 
       $userProducts = \Auth::user()->products;
 
+      $found = null;
+        for($i = 0; $i < count($userProducts); $i++){
+          $product = $userProducts[$i];
 
+            foreach($product as $key => $value) {
+                if ($key == "product" && $value == $id) {
+                    $found = $i;
+                    break;
+                  }
+            }
+        }
 
-
-      array_push($userProducts,  ['product' => intval($id), 'quantity' => intval($request->requestQuantity)]);
-
+      $userProducts[$found]['quantity'] = $request->requestQuantity;
 
       $user = \Auth::user();
       $user->products = $userProducts;
-
       $user->save();
 
       session()->flash('status', "Item Quantity Updated");
-      return redirect('pages.shopping_cart' );
+      return redirect('/shopping_cart' );
 
     }
 
@@ -109,7 +116,54 @@ class ShoppingCartController extends Controller
     public function update(Request $request, $id)
     {
 
-        $userProducts = \Auth::user()->products;
+      $userProducts = \Auth::user()->products;
+
+
+      $found = "notfilled";
+        for($i = 0; $i < count($userProducts); $i++){
+          $product = $userProducts[$i];
+
+            foreach($product as $key => $value) {
+                if ($key == "product" && $value == $id) {
+                    $found = $i;
+                    break;
+                  }
+            }
+        }
+
+
+
+          if ($found != "notfilled" || $found == 0) {
+
+            $userProducts[$found]['quantity'] = $request->requestQuantity + $userProducts[$found]['quantity'];
+
+            $user = \Auth::user();
+            $user->products = $userProducts;
+            $user->save();
+            session()->flash('status', "Updated Quantity of item in Cart!");
+            return redirect('/tea/' . $id );
+          };
+
+      // function arrayKeyValueSearch($array, $key, $value)
+      //     {
+      //         $results = array();
+      //         if (is_array($array)) {
+      //             if (isset($array[$key]) && $array[$key] == $value) {
+      //                 $results[] = $array;
+      //             }
+      //             foreach ($array as $subArray) {
+      //                 $results = array_merge($results, arrayKeyValueSearch($subArray, $key, $value));
+      //             }
+      //         }
+      //         return $results;
+      //     }
+      //
+      //
+      //
+      //     dd(arrayKeyValueSearch($userProducts, "product", 10));
+      //
+
+
 
 
 
@@ -137,8 +191,42 @@ class ShoppingCartController extends Controller
      */
     public function destroy($id)
     {
+      //prevent user or have it change quantity of item that exists
+      //php find by product id array find callback function pass in each item does it equal the product im looking for. then find the index of that item. then reomve item from array by index and resave the array in the database. php array functions.
+      $userProducts = \Auth::user()->products;
 
-    
+
+
+
+      $found = null;
+        for($i = 0; $i < count($userProducts); $i++){
+          $product = $userProducts[$i];
+
+            foreach($product as $key => $value) {
+                if ($key == "product" && $value == $id) {
+                    $found = $i;
+                    break;
+                  }
+            }
+        }
+
+
+
+
+           array_splice($userProducts, $found, 1);
+
+
+
+
+         $user = \Auth::user();
+         $user->products = $userProducts;
+
+         $user->save();
+
+
+
+      session()->flash('status', "Item Deleted From Cart");
+      return redirect ('/shopping_cart');
 
     }
 }

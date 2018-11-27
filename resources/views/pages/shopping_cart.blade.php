@@ -8,8 +8,8 @@
 
 
 
-<h1 class="text-center mt-5 mb-4">Cart</h1>
-<div class="">
+<h1 class="text-center mt-5 mb-5">Cart</h1>
+<div class="fulldiv">
 
 @if($userProducts)
   <table  id="t01"  class="table display-none">
@@ -31,7 +31,7 @@
       <td>
         <form action="/shopping_cart/{{ $product->id }}/edit" method="get">
             <input type="number" name="requestQuantity" min="1" max="50" value="{{ $product->quantity }}">
-            <button type="submit" class="btn btn-light ml-5 mr-4 btn-sm no-margin">apply</button>
+            <button type="submit" class="btn btn-light ml-5 mr-4 btn-sm no-margin">update</button>
         </form>
       </td>
       <td>${{ $product->price }}.00</td>
@@ -41,7 +41,7 @@
         <form class="" action="/shopping_cart/{{ $product->id }}" method="post">
             {{ method_field('DELETE') }}
             {{ csrf_field() }}
-            <button type="submit" class="button btn-sm btn btn-light btn-primary">DELETE</button>
+            <button type="submit" class="button btn-sm btn btn-light btn-primary">x</button>
         </form>
       </td>
     </tr>
