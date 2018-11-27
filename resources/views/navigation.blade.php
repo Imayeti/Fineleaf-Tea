@@ -2,7 +2,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-light ">
 
-                <a href="/"><i class="fas fa-leaf ml-3"></i></a>
+                <a href="/"><i class="fas fa-leaf smfas ml-4 ">&nbsp </i><span class="mr-4">FineLeaf</span></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

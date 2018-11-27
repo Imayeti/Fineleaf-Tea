@@ -28,12 +28,20 @@
       </div>
 
       <div class="float-right clearfix text-align" >
-      {{ $showoz == "yes" ? "2 oz.  -" : "2oo gram cake - "}}${{ $tea->price }}.00<button type="button" class="btn btn-light ml-5 mr-4 no-margin">Add To Cart</button>
+        <form action="/shopping_cart/{{ $tea->id }}" method="post"> @csrf @method('PUT')
+
+          ${{ $tea->price }}.00
+
+          <span class="ml-5">Quantity</span>
+          <input type="number" name="requestQuantity" min="1" max="50" value="1">
+
+          <button type="submit" class="btn btn-light ml-5 mr-4 no-margin">Add To Cart</button>
+        </form>
       </div>
 
       </div>
     </div>
-
+@if ($tea->type != 'teaware')
 <div class="container-fluid">
     <div class="row pt-5 pb-5">
       <div class=" col-md-6  col-xs-12 bg-primary  text-center">
@@ -87,7 +95,7 @@
       </div>
     </div>
   </div>
-
+@endif
 
 
 @include('carousel')

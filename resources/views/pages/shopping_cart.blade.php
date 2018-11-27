@@ -11,7 +11,7 @@
 <h1 class="text-center mt-5 mb-4">Cart</h1>
 <div class="">
 
-
+@if($userProducts)
   <table  id="t01"  class="table">
     <tbody>
     <tr class="border-bottom">
@@ -22,10 +22,21 @@
 @foreach ($temp as $product)
     </tr>
     <tr class="border-bottom">
-      <td ><image class="ml-4 mr-5 zero-margins"src="{{ $product->img_src }}" style="max-width:75px;">{{ $product->name }}</td>
-      <td >{{ $product->quantity }}</td>
+      <td ><image class="ml-4 mr-5 zero-margins"src="{{ $product->img_src }}" style="max-width:75px;"><strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}</td>
+      <td ><form action="/shopping_cart/{{ $product->id }}/edit" method="get">
+
+              <input type="number" name="requestQuantity" min="1" max="50" value="{{ $product->quantity }}">
+              <button type="submit" class="btn btn-light ml-5 mr-4 btn-sm no-margin">apply</button>
+          </form>
+      </td>
       <td>${{ $product->price }}.00</td>
-      <td>${{ $product->price * $product->quantity }}.00</td>
+      <td>${{ $product->price * $product->quantity }}.00
+              <form class="" action="/shopping_cart/{{ $product->id }}" method="post">
+                {{ method_field('DELETE') }}
+                {{ csrf_field() }}
+                <button type="submit" class="button btn btn-primary">DELETE</button>
+              </form>
+      </td>
     </tr>
 @endforeach
 
@@ -79,5 +90,11 @@
 
 
 </div>
+@else
+  <div class="fulldiv">
 
+    <h1 class="text-center pt-5 pb-5 bg-primary">There is nothing in your cart</h1>
+  </div>
+
+@endif
 @endsection

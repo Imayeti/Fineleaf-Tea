@@ -15,24 +15,28 @@ class ShoppingCartController extends Controller
     {
 
 
+          $userProducts = \Auth::user()->products;
 
+          if($userProducts){
+              $user = \Auth::user();
+              $userProductArray = $user->products;
+              // dd($userProductArray);
+    //build up my own array of the data called $temp by looping through by finding by id from the json
+              $temp=array();
+              foreach($userProductArray as $item){
+                $product = \App\product::find($item['product']);
+                $product->quantity = $item['quantity'];
+                array_push($temp,  $product);
 
-          $user = \Auth::user();
-          $userProductArray = $user->products;
-          // dd($userProductArray);
-//build up my own array of the data called $temp by looping through by finding by id from the json
-          $temp=array();
-          foreach($userProductArray as $item){
-            $product = \App\product::find($item['product']);
-            $product->quantity = $item['quantity'];
-            array_push($temp,  $product);
+              }
+              $subtotal = 0;
+              foreach ($temp as $product) {$subtotal += $product->price * $product->quantity;}
+                // $userProducts = \DB::table('products')->whereIn('id', $userProductArray)->get();
+              $total = $subtotal + 10;
+            return view('pages.shopping_cart', compact('temp','subtotal','total','userProducts'));
+        }
 
-          }
-          $subtotal = 0;
-          foreach ($temp as $product) {$subtotal += $product->price * $product->quantity;}
-            // $userProducts = \DB::table('products')->whereIn('id', $userProductArray)->get();
-          $total = $subtotal + 10;
-        return view('pages.shopping_cart', compact('temp','subtotal','total'));
+        return view('pages.shopping_cart', compact('userProducts'));
     }
 
     /**
@@ -73,9 +77,26 @@ class ShoppingCartController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        dd('edit');
+
+
+      $userProducts = \Auth::user()->products;
+
+
+
+
+      array_push($userProducts,  ['product' => intval($id), 'quantity' => intval($request->requestQuantity)]);
+
+
+      $user = \Auth::user();
+      $user->products = $userProducts;
+
+      $user->save();
+
+      session()->flash('status', "Item Quantity Updated");
+      return redirect('pages.shopping_cart' );
+
     }
 
     /**
@@ -87,7 +108,25 @@ class ShoppingCartController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd('here');
+
+        $userProducts = \Auth::user()->products;
+
+
+
+        array_push($userProducts,  ['product' => intval($id), 'quantity' => intval($request->requestQuantity)]);
+
+        $user = \Auth::user();
+        $user->products = $userProducts;
+
+        $user->save();
+
+        session()->flash('status', "Added to Cart!");
+        return redirect('/tea/' . $id );
+
+
+
+
+
     }
 
     /**
@@ -98,6 +137,8 @@ class ShoppingCartController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    
+
     }
 }

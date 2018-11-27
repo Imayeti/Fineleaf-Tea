@@ -49,11 +49,11 @@ class TeawareController extends Controller
      */
     public function show($id)
     {
-      $teaware= \App\product::find($id);
+      $tea= \App\product::find($id);
 
 
 
-      return view('pages.teawareitem', compact('teaware'));
+      return view('pages.teapage', compact('tea'));
 
     }
 

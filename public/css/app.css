@@ -10476,6 +10476,11 @@ a.text-dark:focus {
   font-size: 15px;
 }
 
+.smfas {
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+}
+
 body {
   font-family: 'Cinzel', serif;
   background-color: white;

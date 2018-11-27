@@ -28,9 +28,9 @@
           {{ $showoz == "yes" ? "2 oz.  -" : ""}}{{ $tea->price }}.00
         </div>
         <div class="center-button">
-          <form class="" action="" method="get">
-            <button type="submit" class="btn btn-light">Add To Cart</button>
-          </form>
+
+            <a href="tea/{{$tea->id}}"><button  class="btn btn-light">Purchase</button></a>
+
 
         </div>
       </div>

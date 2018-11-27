@@ -29,7 +29,13 @@
 
       <div class="float-right clearfix text-align" style="font-size: 17px;">
         ${{ $teaware->price }}.00
-        <form action="/shopping_cart/1" type="post"> @csrf @method('PUT')
+        <form action="/shopping_cart/{{ $teaware->id }}" method="post"> @csrf @method('PUT')
+
+
+
+          Quantity
+          <input type="number" name="requestQuantity" min="1" max="50" value="1">
+
           <button type="submit" class="btn btn-light ml-5 mr-4 no-margin">Add To Cart</button>
         </form>
       </div>
