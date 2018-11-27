@@ -133,7 +133,7 @@ class ShoppingCartController extends Controller
 
 
 
-          if ($found != "notfilled" || $found == 0) {
+          if ($found !== "notfilled" ) {
 
             $userProducts[$found]['quantity'] = $request->requestQuantity + $userProducts[$found]['quantity'];
 
