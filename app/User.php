@@ -31,4 +31,8 @@ class User extends Authenticatable
     protected $casts = [
         'products' => 'array'
     ];
+
+    public function order() {
+      return $this->hasMany('App\order');
+  }
 }

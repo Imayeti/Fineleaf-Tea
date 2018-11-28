@@ -123,7 +123,7 @@
   <h3 class="float-right ">order total - ${{ $id }}.00</h3>
   </div>
   <div class="clearfix">
-    <a href="/thankyou"><button type="submit" class="btn btn-secondary float-right">Place order</button></a>
+    <a href="/shopping_cart/create"><button type="submit" class="btn btn-secondary float-right">Place order</button></a>
   </div>
 
 </div>

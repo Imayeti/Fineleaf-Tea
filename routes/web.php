@@ -59,12 +59,3 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/layouttest', function () {
 //    return view('pages.layouttest');
 // });
-
-Route::get('/thankyou', function () {
-
-  $user = \Auth::user();
-  $user->products = [];
-  $user->save();
-  return view ('pages.thankyou');
-});
-//
