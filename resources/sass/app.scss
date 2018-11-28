@@ -292,7 +292,7 @@ button:hover {
 
 
 h3 {
-  color: #31a8c2;
+  // color: #31a8c2;
 }
 
 // .navbar-nav li a {
@@ -323,6 +323,19 @@ h3 {
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
+
+input:focus {
+  outline: none !important;
+  // border-color: lightgrey !important;
+  border: none !important;
+  border-width: thick !important;
+  box-shadow: 0 0 10px #719ECE !important;
+}
+
+div.inline {
+
+
+  }
 
 
 // .btn-primary {

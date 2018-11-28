@@ -141,7 +141,7 @@ class ShoppingCartController extends Controller
             $user = \Auth::user();
             $user->products = $userProducts;
             $user->save();
-            session()->flash('status', "Updated Quantity of item in Cart!");
+            session()->flash('status', "Updated Quantity of item in Cart");
             return redirect('/tea/' . $id );
           };
 
@@ -175,7 +175,7 @@ class ShoppingCartController extends Controller
 
         $user->save();
 
-        session()->flash('status', "Added to Cart!");
+        session()->flash('status', "Added to Cart");
         return redirect('/tea/' . $id );
 
 

@@ -10742,10 +10742,6 @@ body {
   background-image: url("/images/mapwithteaclub.jpg");
 }
 
-h3 {
-  color: #31a8c2;
-}
-
 .fulldiv {
   height: 100vh;
 }
@@ -10764,5 +10760,13 @@ h3 {
 .btn:active:focus,
 .btn.active:focus {
   outline: 0 none;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
+  border-width: thick !important;
+  -webkit-box-shadow: 0 0 10px #719ECE !important;
+          box-shadow: 0 0 10px #719ECE !important;
 }
 

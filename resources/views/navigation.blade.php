@@ -28,9 +28,7 @@
                         <a class="nav-link" href="/teaware">Teaware</a>
                       </li>
 
-                      <li class="nav-item ml-3">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
+                      
                     </ul>
 
                     <!-- Right Side Of Navbar -->

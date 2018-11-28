@@ -17,7 +17,7 @@
       @include('navigation')
 
       @if(session()->has('status'))
-                  <h1 class="text-center alert bg-primary">{!! session()->get('status') !!}</h1>
+                  <h4 class="text-center alert bg-primary">{!! session()->get('status') !!}</h4>
                 @endif
 
       @yield('content')

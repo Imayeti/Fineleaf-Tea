@@ -12,7 +12,7 @@
 <div class="fulldiv">
 
 @if($userProducts)
-  <table  id="t01"  class="table display-on-when-small">
+  <table  id="t01"  class="table display-off-when-small">
     <tbody>
     <tr class="border-bottom">
       <th class="pl-5">PRODUCTS</th>
@@ -97,28 +97,25 @@
 
 
   @foreach ($temp as $product)
-      <div class="container-fluid row pb-2 display-on-when-small display-off-when-large">
+      <div class=" row pb-2 display-on-when-small display-off-when-large text-center">
 
+        <div class="col-md-4 col-xs-8">
 
-        <div class="col-md-4 col-xs-8"><image class="ml-4 mr-5 zero-margins"src="{{ $product->img_src }}" style="max-width:75px;"><strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}
+          <image class=""src="{{ $product->img_src }}" style="max-width:75px;">
+          <div class="inline">
+
+            <strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}</span>
+          </div>
+          <div class="">
+            quantity - <span class="mr-4">{{ $product->quantity }}</span>
+            total  <span class="ml-2">${{ $product->price * $product->quantity }}.00</span>
+          </div>
+          <form class="mb-4" action="/shopping_cart/{{ $product->id }}" method="post">
+              {{ method_field('DELETE') }}
+              {{ csrf_field() }}
+              <button type="submit" class="button btn-sm btn btn-light btn-light mt-2 mb-2">remove</button>
+          </form>
         </div>
-
-
-        <!-- <div class="col-md-2 col-xs-4"><form action="/shopping_cart/{{ $product->id }}/edit" method="get">
-
-                <input type="number" name="requestQuantity" min="1" max="50" value="{{ $product->quantity }}">
-                <button type="submit" class="btn btn-light ml-5 mr-4 btn-sm no-margin">apply</button>
-            </form>
-        </div>
-        <div class="col-md-2 col-xs-4">${{ $product->price }}.00</div>
-        <div class="col-md-2 col-xs-4">${{ $product->price * $product->quantity }}.00</div>
-        <div class="col-md-2 col-xs-4">
-                <form class="" action="/shopping_cart/{{ $product->id }}" method="post">
-                  {{ method_field('DELETE') }}
-                  {{ csrf_field() }}
-                  <button type="submit" class="button btn-sm btn btn-light btn-primary">DELETE</button>
-                </form>
-        </div> -->
       </div>
 
 
@@ -175,7 +172,7 @@
 @else
   <div class="fulldiv">
 
-    <h1 class="text-center pt-5 pb-5 bg-primary">There is nothing in your cart</h1>
+    <h4 class="text-center mt-3 mb-3 pt-3 pb-3 bg-primary">There is nothing in your cart</h4>
   </div>
 
 @endif

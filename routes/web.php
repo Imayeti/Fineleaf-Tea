@@ -56,11 +56,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //test route!!!!!
-Route::get('/layouttest', function () {
-   return view('pages.layouttest');
-});
+// Route::get('/layouttest', function () {
+//    return view('pages.layouttest');
+// });
 
-// Route::get('/checkout', function () {
-//   return view ('pages.checkout')
-// })
+Route::get('/thankyou', function () {
+
+  $user = \Auth::user();
+  $user->products = [];
+  $user->save();
+  return view ('pages.thankyou');
+});
 //

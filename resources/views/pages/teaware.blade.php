@@ -22,7 +22,7 @@
   <div class="row container " style=" margin: 0 auto;">
     @foreach($teaware as $item)
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
           <div class="card card-center border-none">
             <a href="teaware/{{$item->id}}"><img class="card-img-top" src="{{ $item->img_src }}" alt="{{ $item->short_description }}"></a>
             <div class="card-body">
