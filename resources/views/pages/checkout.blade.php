@@ -10,6 +10,7 @@
 
 <div class="fulldiv container">
   <h1 class="text-center mt-5">Checkout</h1>
+  <hr width="100px" class="center-block ">
   <form class="mt-5">
     <div class="form-row">
       <div class="form-group col-6">
@@ -93,7 +94,7 @@
         <input type="text" class="form-control" id="inputZip">
       </div>
   </div>
-  <h3 class="text-center mt-4 mb-4">Credit Card Information</h3>
+  <h3 class="text-center mt-5 mb-5">Credit Card Information</h3>
   <div class="form-row">
     <div class="form-group col-6">
       <label for="CreditCard">name on credit Card</label>
@@ -118,11 +119,11 @@
   </div>
 
   </form>
-
-  <h3 class="text-center mt-4">order total - ${{ $id }}.00</h3>
-
+  <div class="clearfix mb-3">
+  <h3 class="float-right ">order total - ${{ $id }}.00</h3>
+  </div>
   <div class="clearfix">
-    <a href="/thankyou"><button type="submit" class="btn btn-secondary float-right">Finalize Purchase</button></a>
+    <a href="/thankyou"><button type="submit" class="btn btn-secondary float-right">Place order</button></a>
   </div>
 
 </div>

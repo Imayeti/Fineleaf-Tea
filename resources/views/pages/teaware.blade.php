@@ -2,7 +2,7 @@
 
 @section('title')
 
-    Black Tea
+    Teaware
 @endsection
 
 @section('content')

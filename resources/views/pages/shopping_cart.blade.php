@@ -8,7 +8,8 @@
 
 
 
-<h1 class="text-center mt-5 mb-5">Cart</h1>
+<h1 class="text-center mt-5 ">Cart</h1>
+<hr width="100px" class="center-block pb-5">
 <div class="fulldiv">
 
 @if($userProducts)
@@ -16,6 +17,7 @@
     <tbody>
     <tr class="border-bottom">
       <th class="pl-5">PRODUCTS</th>
+      <th class="pl-5"></th>
       <th>Qt.</th>
 
       <th>PRICE</th>
@@ -25,13 +27,15 @@
     </tr>
     <tr class="border-bottom">
       <td >
-        <image class="ml-4 mr-5 zero-margins"src="{{ $product->img_src }}" style="max-width:75px;">
+        <image class="ml-4 mr-5 zero-margins "src="{{ $product->img_src }}" style="max-width:75px;">
+      </td>
+      <td>
         <strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}
       </td>
       <td>
         <form action="/shopping_cart/{{ $product->id }}/edit" method="get">
             <input type="number" name="requestQuantity" min="1" max="50" value="{{ $product->quantity }}">
-            <button type="submit" class="btn btn-light ml-5 mr-4 btn-sm no-margin">update</button>
+            <button type="submit" class="btn btn-light ml-3 btn-sm ">update</button>
         </form>
       </td>
       <td>${{ $product->price }}.00</td>
