@@ -32,7 +32,7 @@ class User extends Authenticatable
         'products' => 'array'
     ];
 
-    public function order() {
+    public function orders() {
       return $this->hasMany('App\order');
   }
 }

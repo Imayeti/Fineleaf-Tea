@@ -60,9 +60,11 @@ class ShoppingCartController extends Controller
         $order->save();
 
 
-        // $user = \Auth::user();
-        // $user->products = [];
-        // $user->save();
+        $user = \Auth::user();
+        $user->products = [];
+        $user->save();
+
+        return view ('pages.thankyou');
     }
 
     /**
