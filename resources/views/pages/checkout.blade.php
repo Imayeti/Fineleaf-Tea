@@ -8,7 +8,7 @@
 @section('content')
 
 
-<div class="fulldiv container">
+<div class=" container">
   <h1 class="text-center mt-5">Checkout</h1>
   <hr width="100px" class="center-block ">
   <form class="mt-5">
@@ -123,7 +123,7 @@
   <h3 class="float-right ">order total - ${{ $id }}.00</h3>
   </div>
   <div class="clearfix">
-    <a href="/shopping_cart/create"><button type="submit" class="btn btn-secondary float-right">Place order</button></a>
+    <a href="/shopping_cart/create"><button type="submit" class="btn btn-secondary mb-5 float-right">Place order</button></a>
   </div>
 
 </div>

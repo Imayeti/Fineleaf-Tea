@@ -7,11 +7,11 @@
 
 @section('content')
 
-  <div class="fulldiv">
-    
-    <h1 class="text-center mt-5 mb-5 ">Your order has been placed.</h1>
-    <h1 class="text-center">thank you!</h1>
-
+  <div class="site-content">
+    <div class="vert-align">
+      <h1 class="text-center mb-5 ">Your order has been placed.</h1>
+      <h1 class="text-center">thank you!</h1>
+    </div>
   </div>
 
 @endsection

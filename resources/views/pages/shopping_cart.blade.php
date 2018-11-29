@@ -7,10 +7,10 @@
 @section('content')
 
 
+<div class="site-content">
 
 <h1 class="text-center mt-5 ">Cart</h1>
 <hr width="100px" class="center-block pb-5">
-<div class="fulldiv">
 
 @if($userProducts)
   <table  id="t01"  class="table display-off-when-small">

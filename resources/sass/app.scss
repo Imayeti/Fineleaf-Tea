@@ -23,6 +23,21 @@ $theme-colors: (
 
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.vert-align{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 .smfas { transform: scale(.7,.7); }
