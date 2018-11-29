@@ -2,7 +2,7 @@
 
 @section('title')
 
-    Black Tea
+    {{ $teatype }}
 @endsection
 
 @section('content')

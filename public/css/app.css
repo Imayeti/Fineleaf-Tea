@@ -10493,6 +10493,10 @@ a.text-dark:focus {
           flex: 1;
 }
 
+a:hover {
+  color: grey !important;
+}
+
 .vert-align {
   display: -webkit-box;
   display: -ms-flexbox;

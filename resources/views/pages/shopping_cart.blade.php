@@ -166,7 +166,7 @@
     <form class="" action="/shopping_cart/{{ $total }}" method="get">
       @csrf
 
-      <button type="submit" class="btn float-right mb-4 mr-2" >Proceed to Checkout</button>
+      <button type="submit" class="btn btn-light float-right mb-4 mr-2" >Proceed to Checkout</button>
     </form>
 
 </div>

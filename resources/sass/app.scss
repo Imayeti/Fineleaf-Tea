@@ -32,7 +32,9 @@ $theme-colors: (
 .site-content {
   flex: 1;
 }
-
+a:hover {
+  color: grey !important;
+}
 .vert-align{
   display: flex;
   flex-direction: column;
