@@ -23,6 +23,11 @@ $theme-colors: (
 
 }
 
+.thick-hr {
+  background-color: grey;
+  height: 1.5px;
+}
+
 .site {
   display: flex;
   min-height: 100vh;

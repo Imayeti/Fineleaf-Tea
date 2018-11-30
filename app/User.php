@@ -57,9 +57,12 @@ class User extends Authenticatable
       foreach ($this->cart() as $product) {
         $subtotal += $product->price * $product->quantity;
       }
+      return $subtotal;
     }
 
     public function total() {
       $total = $this->subtotal() + 10;
+      return $total;
     }
+
 }

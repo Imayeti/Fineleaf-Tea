@@ -27,7 +27,7 @@
     </tr>
     <tr class="border-bottom">
       <td >
-        <image class="ml-4 mr-5 zero-margins "src="{{ $product->img_src }}" style="max-width:75px;">
+          <a href="tea/{{$product->id}}"><image class="ml-4 mr-5 zero-margins "src="{{ $product->img_src }}" style="max-width:75px;"></a>
       </td>
       <td>
         <strong>{{ $product->name }}</strong>&nbsp -<span class="ml-1">{{ $product->short_description }}

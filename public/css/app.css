@@ -10476,6 +10476,11 @@ a.text-dark:focus {
   font-size: 15px;
 }
 
+.thick-hr {
+  background-color: grey;
+  height: 1.5px;
+}
+
 .site {
   display: -webkit-box;
   display: -ms-flexbox;
