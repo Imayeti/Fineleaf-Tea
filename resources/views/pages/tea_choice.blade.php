@@ -84,10 +84,10 @@
 <hr width="50%" class="center-block mt-3 mb-3">
 
 
-<div class="row container " style=" margin: 0 auto;">
+
 
       @include('carousel')
-</div>
+
 
 
 

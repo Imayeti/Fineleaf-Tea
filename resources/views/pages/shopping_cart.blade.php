@@ -23,7 +23,7 @@
       <th>PRICE</th>
       <th>TOTAL</th>
       <th></th>
-@foreach ($temp as $product)
+@foreach ($cart as $product)
     </tr>
     <tr class="border-bottom">
       <td >
@@ -100,7 +100,7 @@
 
 
 
-  @foreach ($temp as $product)
+  @foreach ($cart as $product)
       <div class=" row pb-2 display-on-when-small display-off-when-large text-center">
 
         <div class="col-md-4 col-xs-8">

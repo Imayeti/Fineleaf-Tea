@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class OrdersController extends Controller
 {
   public function index()
-  {     $user = \Auth::user();
-        $orders = $user->orders()->get();
+  {
+        $orders = $orderscollection = \Auth::user()->orders()->orderBy('updated_at', 'desc')->get();
 
-        dd($orders);
+        
 
         // if($userProducts){
         //     $user = \Auth::user();
