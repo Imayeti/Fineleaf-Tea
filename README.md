@@ -1,6 +1,5 @@
-# See Docs Folder For Pictures of Mockups and Database Structure!
+# Fineleaf Teas
 
-# Final Project Idea
 
 
 1. Objective - The objective of my final project is to create an online tea shop where users can see an assortment of teas and tea ware for sale. Users will be able to sign up and log in to their own account which will give them access to their purchase history as well as quick checkout that won't require them to re-enter their credit card or shipping information. Users will also be able to write reviews on teas, rate teas, and gift teas to other users.
@@ -17,3 +16,5 @@ compile everything into the 'dist' directory.
 The user will be able to input text reviews that will end up being displayed on the corresponding tea page. This will only be displayed after I get a chance to read the review and determine if there is any inappropriate content. Users will also be able to rate teas on a scale of one to 10 and that will be displayed at the top of their review.
 
 An average of all reviews will be displayed next to the name of the tea.
+
+1. This is a Laravel project. To begin coding on this project

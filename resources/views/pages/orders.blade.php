@@ -18,12 +18,12 @@
   <table  id="t01"  class="table  ">
     <tbody>
     <tr class="border-bottom">
-      <th class="pl-5">PRODUCTS</th>
+      <th class="pl-5 border-top-0">PRODUCTS</th>
 
-      <th>Qt.</th>
+      <th class="border-top-0">Qt.</th>
 
-      <th >PRICE</th>
-      <th>TOTAL</th>
+      <th class="border-top-0">PRICE</th>
+      <th class="border-top-0">TOTAL</th>
 
   @foreach ($order->createSingleOrder() as $singleOrderInfo)
 

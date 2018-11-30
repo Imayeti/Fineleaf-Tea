@@ -36,25 +36,7 @@ class ShoppingCartController extends Controller
      */
     public function create()
     {
-        $userProducts = \Auth::user()->products;
 
-
-        //adds the array of items in cart to the order table
-        $order = new \App\order;
-
-        $order->user_id = \Auth::id();
-        $order->order_products = $userProducts;
-
-
-
-        $order->save();
-
-
-        $user = \Auth::user();
-        $user->products = [];
-        $user->save();
-
-        return view ('pages.thankyou');
     }
 
     /**
@@ -65,7 +47,25 @@ class ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-      dd('store');
+      $userProducts = \Auth::user()->products;
+
+
+      //adds the array of items in cart to the order table
+      $order = new \App\order;
+
+      $order->user_id = \Auth::id();
+      $order->order_products = $userProducts;
+
+
+
+      $order->save();
+
+
+      $user = \Auth::user();
+      $user->products = [];
+      $user->save();
+
+      return view ('pages.thankyou');
     }
 
     /**
