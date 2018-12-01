@@ -12,7 +12,7 @@ Before working on this project you will need installed:
 
 ## For Local Installation
   1. Clone this Repository
-  2. Run these commands to set up your local environment
+  2. Run these commands to set up your local environment:
     - $composer install
     - $npm install
     - $cp .env.example .env
