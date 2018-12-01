@@ -13906,20 +13906,25 @@ window.Vue = __webpack_require__(36);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-  el: '#app'
+	el: '#app'
 });
 
 $(document).ready(function () {
-  // executes when HTML-Document is loaded and DOM is ready
 
+	// hide .navbar first
+	$(".navbar").hide();
 
-  $(".card").hover(function () {
-    $(this).addClass('shadow-lg').css('cursor', 'pointer');
-  }, function () {
-    $(this).removeClass('shadow-lg');
-  });
-
-  // document ready
+	// fade in .navbar
+	$(function () {
+		$(window).scroll(function () {
+			// set distance user needs to scroll before we fadeIn navbar
+			if ($(this).scrollTop() > 100) {
+				$('.navbar').fadeIn();
+			} else {
+				$('.navbar').fadeOut();
+			}
+		});
+	});
 });
 
 /***/ }),

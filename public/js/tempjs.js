@@ -1,5 +1,26 @@
 
-console.log('hi');
+
+  $(document).ready(function(){
+
+	// hide .navbar first
+	$(".nav-appear").hide();
+
+	// fade in .navbar
+	$(function () {
+		$(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+			if ($(this).scrollTop() > 170) {
+				$('.nav-appear').fadeIn(150);
+			} else {
+				$('.nav-appear').fadeOut(150);
+			}
+		});
+
+
+	});
+
+});
+
 
 
 $(document).ready(function() {
