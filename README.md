@@ -13,10 +13,11 @@ Before working on this project you will need installed:
 ## For Local Installation
   1. Clone this Repository
   2. Run these commands to set up your local environment:
-    - $composer install
-    - $npm install
-    - $cp .env.example .env
-    - $php artisan key:generate
+
+- $composer install
+- $npm install
+- $cp .env.example .env
+- $php artisan key:generate
 
 ## Compiling Assets
   You can compile your assets in laravel by running **$ npm run dev** in the command line. Or if you want to automatically
