@@ -87,7 +87,23 @@ class TeaController extends Controller
         $showoz = "yes";
       }
 
-      return view('pages.teapage', compact('tea', 'showoz'));
+      $randomProducts = array();
+
+      function UniqueRandomNumbersWithinRange($min, $max, $quantity) {
+        $numbers = range($min, $max);
+        shuffle($numbers);
+        return array_slice($numbers, 0, $quantity);
+      }
+
+      $fourRandomNumbers = UniqueRandomNumbersWithinRange(1, 40, 4);
+
+
+      foreach ($fourRandomNumbers as $randomNumber){
+        array_push($randomProducts, \App\product::find($randomNumber));
+      }
+
+
+      return view('pages.teapage', compact('tea', 'showoz', 'randomProducts'));
 
 
 

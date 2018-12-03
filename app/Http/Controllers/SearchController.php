@@ -11,7 +11,7 @@ class SearchController extends Controller
       $products = new \App\product;
 
 
-      $searchArray = explode(' ', $request->searchstring);
+
       // dd($searchArray);
       $searchResultsArray = array();
 

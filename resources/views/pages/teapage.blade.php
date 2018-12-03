@@ -97,6 +97,41 @@
   </div>
 @endif
 
+<h3 class="text-center mt-5">You May Also Be Interested In</h3>
+<hr width="80%" class="center-block ">
+
+
+
+
+    <div class="row container " style=" margin: 0 auto;">
+      @foreach($randomProducts as $product)
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mt-5">
+            <div class="card card-center border-none">
+              <a href="tea/{{$product->id}}"><img class="card-img-top" src="{{ $product->img_src }}" alt="{{ $product->short_description }}"></a>
+              <div class="card-body">
+                <p class="card-text text-center">{{ $product->name }}</p>
+              </div>
+            </div>
+            <div class="mb-3 text-center">
+               ${{ $product->price }}.00
+            </div>
+            <div class="center-button">
+
+                <a href="tea/{{$product->id}}"><button class="btn btn-light">Purchase</button></a>
+
+
+            </div>
+          </div>
+
+
+          @endforeach
+
+    </div>
+    <hr width="80%" class="center-block ">
+    
+
+
 @include('carousel')
 
 @endsection
