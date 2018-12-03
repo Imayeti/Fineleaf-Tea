@@ -149,7 +149,7 @@ class ProductTableSeeder extends Seeder
       $tea->type = 'greentea';
       $tea->full_description = "This is a traditionally roasted Green tea and takes a fair amount of skill to prevent the leaves from burning or smoking. The depth of flavour comes from the deep roast of the Nibancha (second flush) but the addition of the more expensive Ichibancha (first flush) adds a luxuriant and brighter aroma. The result is a very smooth Green tea full of caramel and sweet soya umami. It should be brewed with hotter water than other Japanese Green tea (about 95 degrees or 205 Fahrenheit) to extract the richness of flavour and don't be afraid to use a little more leaf by volume then you would for other Green teas as the Houjicha leaves are bigger and lighter.";
       $tea->short_description = 'A roasted blend of three pickings of Bancha Green tea';
-      $tea->img_src = "/images/greentea/houjicha.jpg";
+      $tea->img_src = "/images/greentea/houjichatwo.jpg";
       $tea->price = 16.00;
       $tea->save();
 
