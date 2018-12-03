@@ -33,7 +33,11 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav  ml-auto">
-
+                      <form class="form-inline my-2 my-lg-0" method="get" action="/search">
+                          @csrf
+                         <input class="form-control mr-sm-2" name="searchstring" type="search" placeholder="Search" aria-label="Search">
+                         <button class="btn btn-sm  my-2 my-sm-0 mr-4" type="submit">Search</button>
+                      </form>
                         <!-- Authentication Links -->
                         <li>
                           <a href="/shopping_cart" class="vertical2"><i class="fas fa-shopping-cart mr-4  "></i></a>

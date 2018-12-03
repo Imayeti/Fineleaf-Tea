@@ -57,6 +57,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/orders', 'OrdersController@index')->middleware('auth');
+Route::get('/search', 'SearchController@index');
 
 //test route!!!!!
 // Route::get('/layouttest', function () {
