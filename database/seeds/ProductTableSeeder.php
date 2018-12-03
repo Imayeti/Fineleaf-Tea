@@ -17,7 +17,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Superior Keemun';
       $tea->type = 'blacktea';
       $tea->full_description = "This is the finest grade of Keemun. It is made from the 'Xiao' (small) pickings of 50-year-old trees grown in Qimen and hand-rolled before drying. This creates a much more complex taste and smoother texture than the standard 'Keemun Maofeng' which is not hand-rolled.";
-      $tea->short_description = 'Top shelf, hand-rolled Keemun Black';
+      $tea->short_description = 'Top shelf, hand-rolled Keemun Black tea';
       $tea->img_src = "/images/blacktea/superiorkeemun.jpg";
       $tea->price = 15.00;
       $tea->save();
@@ -26,7 +26,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Little Tong Mu';
       $tea->type = 'blacktea';
       $tea->full_description = 'Unsmoked Lapsang from the famed Tong Mu village. Floral and fruity with muscatel grapes, lychees, rose, lilac and fresh cut wet oak. This tea is ORIGINAL Tong Mu smoked Lapsang, made with top quality leaves and smoked with skill. The wood used is a fruit wood (Longan) which adds a sweet and fruity note to the tea and the smoke is warming, comforting and enticing rather than harsh, acrid and overpowering';
-      $tea->short_description = 'Unsmoked Lapsang ';
+      $tea->short_description = 'Unsmoked Lapsang black tea';
       $tea->img_src = "/images/blacktea/littletongmu.jpg";
       $tea->price = 18.00;
       $tea->save();
@@ -36,7 +36,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Keemun';
       $tea->type = 'blacktea';
       $tea->full_description = 'This is the finest grade of Keemun. It is made from the Xiao (small) pickings of 50-year-old trees grown in Qimen and hand-rolled before drying. This creates a much more complex taste and smoother texture than the standard Keemun Maofeng which is not hand-rolled.';
-      $tea->short_description = 'Top shelf, hand-rolled Keemun Black ';
+      $tea->short_description = 'Top shelf, hand-rolled Keemun black tea';
       $tea->img_src = "/images/blacktea/keemun.jpg";
       $tea->price = 21.00;
       $tea->save();
@@ -45,7 +45,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Jin Jun Mei';
       $tea->type = 'blacktea';
       $tea->full_description = 'Highest grade Wuyi tea picked only a few days per year. Turkish delight notes of rose and cocoa, lychee fruitiness and roasted prune. Ultra soft and juicy. This is a very special tea. It is one of the most expensive teas in China and almost impossible to find outside the most discerning tea circles.';
-      $tea->short_description = 'High grade authentic Jin Jun Mei';
+      $tea->short_description = 'High grade authentic Jin Jun Mei black tea';
       $tea->img_src = "/images/blacktea/jinjunmei.jpg";
       $tea->price = 25.00;
       $tea->save();
@@ -93,7 +93,7 @@ class ProductTableSeeder extends Seeder
       $tea->type = 'greentea';
       $tea->full_description = "This is China's most famous Green tea, absolutely revered for its rich yet refreshing flavour and the fragrance of lush spring grass. This tea was picked on March 19th 2018 making it a very early Pre Qing Ming tea.
       Authentic Long Jing tea (otherwise known as Dragonwell) must be grown in Zhejiang province. If it is grown anywhere else then it is considered a fake (much like champagne). Every year we taste many samples of Long Jing to find our batch for the year. For the past couple of years, we have selected a tea from outside the West Lake area because we feel that it has a much higher quality compared with the West Lake tea.";
-      $tea->short_description = 'Pre Qing Ming harvest of one of China’s most famous teas';
+      $tea->short_description = 'Pre Qing Ming harvest of one of China’s most famous green teas';
       $tea->img_src = "/images/greentea/imperialgreen.jpg";
       $tea->price = 22.00;
       $tea->save();
@@ -103,7 +103,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Gyukuro';
       $tea->type = 'greentea';
       $tea->full_description = 'Get ready for an intense Umami (rich and savoury) taste and super thick mouthfeel. Gyokuro is made from heavily shaded green tea. In the same way as growing Tencha (to make Matcha), the shading stops the leaves from converting Theanine to Catechins and increases the amount of Chlorophyll. The resulting high Theanine content in the tea means that you get a huge mouthful of mood enhancing umami in your cup!';
-      $tea->short_description = 'Top shelf, hand picked Gyokuro.';
+      $tea->short_description = 'Top shelf, hand picked Gyokuro green tea.';
       $tea->img_src = "/images/greentea/gyukuro.jpg";
       $tea->price = 21.00;
       $tea->save();
@@ -112,7 +112,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Matcha';
       $tea->type = 'greentea';
       $tea->full_description = 'This is a 30g tin of 100% Uji Hikari variety ceremonial grade matcha made from hand-picked tencha which has been shaded for about a month before picking. The shading on these leaves has gone up to 90% by using three covers to almost entirely block out the sun just before harvesting. The leaves are stone ground using granite mills in a small family run factory in Uji which has been making award-winning matcha for generations.';
-      $tea->short_description = 'Ultra small batch Uji Matcha';
+      $tea->short_description = 'Ultra small batch Uji Matcha green tea';
       $tea->img_src = "/images/greentea/matcha.jpg";
       $tea->price = 18.00;
       $tea->save();
@@ -130,7 +130,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Jade Sword';
       $tea->type = 'greentea';
       $tea->full_description = "This tea is made from the milky, green buds and young leaves from the Bai Ye or 'White' tea varietal. The Song Dynasty Emperor Huizong was a great tea lover and proclaimed (in his 900 year old book 'Da Guan Cha Lun') that his favourite tea was from the 'White' tea varietal that sprouts pale white jade coloured leaves. In the 1980's, old tea trees matching this description were discovered in Anji County and some people believe that these were the tea trees to which the Emperor was referring.";
-      $tea->short_description = 'Pre Qing Ming picked Anji Green';
+      $tea->short_description = 'Pre Qing Ming picked Anji Green tea';
       $tea->img_src = "/images/greentea/jadesword.jpg";
       $tea->price = 15.00;
       $tea->save();
@@ -157,7 +157,7 @@ class ProductTableSeeder extends Seeder
       $tea->name = 'Green Coil';
       $tea->type = 'greentea';
       $tea->full_description = 'This is a vibrant and rich tea whilst maintaining a bright and light demeanour. The buds and leaves are so delicate and fine from perfect firing and hand rolling in small batches. There is a whisper of hot wok underpinning a lush taste of spring vegetables, minerals and elderflower.';
-      $tea->short_description = '';
+      $tea->short_description = 'a whisper of hot wok underpinning a lush taste of spring vegetables in this green tea';
       $tea->img_src = "/images/greentea/greencoil.jpg";
       $tea->price = 13.00;
       $tea->save();
@@ -199,7 +199,7 @@ class ProductTableSeeder extends Seeder
       $tea->full_description = "Our Zhang Xiang Bu Lang cake has a heavy and layered aroma that is potent and ever-present within the soup of the tea. An extremely smooth young tea with complex top notes and sweetness that will eventually age into a honey like body. A very comfortable tea to drink young or age.
 
       Each cake is 200 grams.";
-      $tea->short_description = "Smooth and complex Raw Pu-erh Tea Cake";
+      $tea->short_description = "Smooth and complex Raw Puerh Tea Cake";
       $tea->img_src = "/images/puerhtea/zhang.jpg";
       $tea->price = 45.00;
       $tea->save();
@@ -210,7 +210,7 @@ class ProductTableSeeder extends Seeder
       $tea->full_description = "'Ming Xiang Ya Yuan' is the name of Hai Lang's tea shop and was the first brand that Hai Lang produced.  This was pressed from first flush of spring 'Xi Bang' area tea from Lincang.
 
 This is a pure Kunming storage tea and the brewed tea soup color and still green leaves reflects this dry storage condition.  The tea is potent with strong mouthfeel, long lasting hui gan and cooling effect inthe mouth and throat.  The aged taste is there but overall the tea has retained alot of it's regional character. ";
-      $tea->short_description = "2003 Hai Lang Hao 'Xi Bang' Raw Pu-erh Tea Cake";
+      $tea->short_description = "2003 Hai Lang Hao 'Xi Bang' Raw Puerh Tea Cake";
       $tea->img_src = "/images/puerhtea/hailonghao.jpg";
       $tea->price = 60.00;
       $tea->save();
@@ -228,7 +228,7 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
       $tea->name = '2005 Yi Wu Cha Yuan';
       $tea->type = 'puerhtea';
       $tea->full_description = "A small production from a family producer in Yi Wu town.  This has been aged for 10 years in tropical Jinghong town of Xishuangbanna Prefecture (Yunnan).  The tea cake is produced entirely from Spring 2005 harvested Yi Wu area tea and then stone-pressed in the traditional way. The storage condition has given this tea a red tea soup and sweet camphor and mushroom taste and feel.  The tea is still characteristically Yi Wu.  Smooth with a robust cha qi this is a perfect cake for those seeking something aged with complexity while still retaining the needed character/quality for further aging and improvement.";
-      $tea->short_description = "2005 Yi Wu Cha Yuan Big Green Tree Raw Pu-erh tea cake";
+      $tea->short_description = "2005 Yi Wu Cha Yuan Big Green Tree Raw Puerh tea cake";
       $tea->img_src = "/images/puerhtea/yiwu.jpg";
       $tea->price = 57.00;
       $tea->save();
@@ -237,7 +237,7 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
       $tea->name = '2007 Feng Qing';
       $tea->type = 'puerhtea';
       $tea->full_description = "This is a spring 2007 pressing done in a small Feng Qing area tea factory and then aged in a dry storage condition in Guangzhou until August 2018 when it was purchased by us. This is a very nicely aged raw pu-erh tea that displays just how nicely raw pu-erh made from Feng Qing (a county in Lincang) material can do well if stored corsectly. Sweet and viscous with a spicy aged feeling.  Nice golden orange tea soup and still a decent amount of bitter and astringent.  An excellent every day drinking semi-aged sheng that could also be aged further.  ";
-      $tea->short_description = "2007 Feng Qing Zao Chun Yin Hao Raw Pu-erh Tea Cake";
+      $tea->short_description = "2007 Feng Qing Zao Chun Yin Hao Raw Puerh Tea Cake";
       $tea->img_src = "/images/puerhtea/fengqing.jpg";
       $tea->price = 40.00;
       $tea->save();
@@ -307,7 +307,7 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
       $tea->name = 'Chrysanthemum White';
       $tea->type = 'whitetea';
       $tea->full_description = "Fragrant combination of Jasmine Silver Needle and Chrysanthemum. Flavor notes akin to wild strawberries, sweet flowers and river pebbles.";
-      $tea->short_description = "Jasmine Silver Needle and Chrysanthemum";
+      $tea->short_description = "Jasmine Silver Needle and Chrysanthemum white tea";
       $tea->img_src = "/images/whitetea/whiteblossom.jpg";
       $tea->price = 16.00;
       $tea->save();
@@ -317,7 +317,7 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
       $tea->name = 'Ya Bao';
       $tea->type = 'whitetea';
       $tea->full_description = "Ya Bao is a special bud tea made from the ancillary buds of wild tea trees growing in the Western border of Yunnan. These tea trees (Assamica Dehongensis) can be used to make Yunnan Black and PuErh tea but in late Winter some of the ancillary buds are picked in small quantities. The ancillary or lateral buds are the first shoots of the year which will become stems. This is different to the terminal buds used in most tea production (which will become leaves). These ancillary buds have a unique cone layered appearance and have to be picked sparingly otherwise the tea trees will not grow enough branches.";
-      $tea->short_description = "The precious lateral buds of wild PuErh trees picked in late winter";
+      $tea->short_description = "Wihite tea from the buds of wild PuErh trees picked in late winter";
       $tea->img_src = "/images/whitetea/elderwhite.jpg";
       $tea->price = 23.00;
       $tea->save();
@@ -350,7 +350,7 @@ This is a pure Kunming storage tea and the brewed tea soup color and still green
 Made from De Hua porcelain which is luxurious and relatively thin to give your tea sessions the aesthetics worthy of your tea.
 
 The opening fits all Chinese strainers and, even though it has subtle, short spout, it has a great drip free pour.";
-      $teaware->short_description = "";
+      $teaware->short_description = "A perfect blue Gong Dao Bei (fairness cup)";
       $teaware->img_src = "/images/teaware/bluegongdaobei.jpg";
       $teaware->price = 16.00;
       $teaware->save();
