@@ -172,15 +172,15 @@
 </div>
 
 
-</div>
 @else
-  <div class="fulldiv">
+
 
     <h4 class="text-center mt-3 mb-3 pt-3 pb-3 bg-primary">There is nothing in your cart</h4>
-  </div>
+
 
 @endif
 
+</div>
 
 
 

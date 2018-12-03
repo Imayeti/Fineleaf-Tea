@@ -17,9 +17,10 @@ class SearchController extends Controller
 
       $searchValue = $request->searchstring;
         // array_push($searchResultsArray, $products->Where('name', 'LIKE', '%'.$searchValue.'%'));
-       array_push($searchResultsArray, $products->where('name', 'ILIKE', '%'.$searchValue.'%')->orWhere('full_description', 'ILIKE', '%'.$searchValue.'%')->orWhere('type', 'ILIKE', '%'.$searchValue.'%')->orWhere('short_description', 'ILIKE', '%'.$searchValue.'%')->get());
+       array_push($searchResultsArray, $products->where('name', 'ILIKE', '%'.$searchValue.'%')->orWhere('type', 'ILIKE', '%'.$searchValue.'%')->orWhere('short_description', 'ILIKE', '%'.$searchValue.'%')->get());
 
-      // dd($searchResultsArray);
+
+      // dd($searchResultsArray[0]->all());
       return view ('pages.searchresults', compact('searchResultsArray'));
     }
 }
