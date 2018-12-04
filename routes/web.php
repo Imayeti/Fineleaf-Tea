@@ -57,7 +57,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/orders', 'OrdersController@index')->middleware('auth');
+
 Route::get('/search', 'SearchController@index');
+
+Route::post('/review', 'ReviewController@store');
+
+// Route::get('/review/{id} ', 'ReviewController@show');
 
 //test route!!!!!
 // Route::get('/layouttest', function () {

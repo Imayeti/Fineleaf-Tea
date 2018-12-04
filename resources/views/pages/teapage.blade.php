@@ -39,8 +39,13 @@
         </form>
       </div>
 
+
       </div>
+
+        <a href="#reviews"><span class="float-right">See Reviews ({{$reviews->count()}})</span></a>
+
     </div>
+
 @if ($tea->type != 'teaware')
 <div class="container-fluid">
     <div class="row pt-5 pb-5">
@@ -97,6 +102,20 @@
   </div>
 @endif
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3 class="text-center mt-5">You May Also Be Interested In</h3>
 <hr width="80%" class="center-block ">
 
@@ -108,7 +127,7 @@
 
           <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mt-5">
             <div class="card card-center border-none">
-              <a href="tea/{{$product->id}}"><img class="card-img-top" src="{{ $product->img_src }}" alt="{{ $product->short_description }}"></a>
+              <a href="/tea/{{$product->id}}"><img class="card-img-top" src="{{ $product->img_src }}" alt="{{ $product->short_description }}"></a>
               <div class="card-body">
                 <p class="card-text text-center">{{ $product->name }}</p>
               </div>
@@ -129,9 +148,43 @@
 
     </div>
     <hr width="80%" class="center-block ">
-    
+
 
 
 @include('carousel')
+
+<h3 class="text-center">Reviews</h3>
+<hr width="80%" class="center-block mb-5">
+
+<div class="container" id="reviews">
+
+@if($reviews->count() > 0)
+
+@foreach ($reviews as $review)
+<div class="border">
+
+    <div class="pl-2 pt-2 bg-light pb-1">
+      <p>{{$review->user_name}} at {{$review->prettyUpdate()}}</p>
+    </div>
+
+    <div class="ml-2">
+    <p>{{$review->review}}</p>
+    </div>
+
+</div>
+@endforeach
+
+@else
+<p class="text-center">There are no reviews for this product yet</p>
+@endif
+
+<form class=" pt-1 mb-4 mt-5" method="POST" action="/review">
+  @csrf
+    <label for="review"><h4>leave a review for {{$tea->name}}!</h4></label>
+    <textarea class="form-control textarea " type="text" id="review" name="review" required></textarea>
+    <input type="hidden" name="productid" value="{{ $tea->id }}"></input>
+    <button class="btn btn-secondary btn-sm" type="submit">Add Review</button>
+</form>
+</div>
 
 @endsection

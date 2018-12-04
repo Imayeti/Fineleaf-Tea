@@ -103,7 +103,13 @@ class TeaController extends Controller
       }
 
 
-      return view('pages.teapage', compact('tea', 'showoz', 'randomProducts'));
+      $reviews = new \App\review;
+      $reviews = $reviews->where('product_id', $id)->get();
+
+
+
+
+      return view('pages.teapage', compact('tea', 'showoz', 'randomProducts','reviews'));
 
 
 
