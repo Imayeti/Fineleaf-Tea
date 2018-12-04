@@ -40,56 +40,63 @@
       </div>
 
 
+        <div class="">
+
+            <a href="#reviews"><span class="mr-3 greytext">See Reviews ({{$reviews->count()}})</span></a>
+
+            <div class="rating2 ">
+
+                  @if($averageOfStars == 1)
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  @elseif($averageOfStars == 2)
+
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  @elseif($averageOfStars == 3)
+
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  @elseif($averageOfStars == 4)
+
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  @elseif($averageOfStars == 5)
+
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                @endif
+              </div>
+            </div>
+
+
       </div>
 
 
 
-            <div class="rating">
 
-            @if($averageOfStars == 1)
-            <label>
-              <input type="radio" name="stars" value="1" />
-              <span class="icon">★</span>
-            </label>
-            @elseif($averageOfStars == 2)
-
-            <label>
-              <input type="radio" name="stars" value="2" />
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-            </label>
-            @elseif($averageOfStars == 3)
-
-            <label>
-              <input type="radio" name="stars" value="3" />
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-            </label>
-            @elseif($averageOfStars == 4)
-
-            <label>
-              <input type="radio" name="stars" value="4" />
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-            </label>
-            @elseif($averageOfStars == 5)
-
-            <label>
-              <input type="radio" name="stars" value="5" />
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-              <span class="icon">★</span>
-            </label>
-          </div>
-          @endif
         </div>
 
-        <a href="#reviews"><span class="float-right">See Reviews ({{$reviews->count()}})</span></a>
 
     </div>
 
@@ -213,7 +220,7 @@
     <div class="pl-2 pt-2 bg-light pb-1">
       <p>{{$review->user_name}} at {{$review->prettyUpdate()}}</p></br>
 
-      <div class="rating">
+      <div class="rating2">
 
       @if($review->stars == 1)
       <label>
@@ -265,7 +272,6 @@
     </div>
 
 </div>
-
 @endforeach
 
 @else
