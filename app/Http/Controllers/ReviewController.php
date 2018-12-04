@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 class ReviewController extends Controller
 {
     public function store(Request $request) {
-      // dd($request->productid);
+
 
       $review = new \App\review;
       $review->product_id = $request->productid;
       $review->review = $request->review;
       $review->user_name = \Auth::user()->name;
+      $review->stars = $request->stars;
+
       $review->save();
 
 

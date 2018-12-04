@@ -60,7 +60,7 @@ Route::get('/orders', 'OrdersController@index')->middleware('auth');
 
 Route::get('/search', 'SearchController@index');
 
-Route::post('/review', 'ReviewController@store');
+Route::post('/review', 'ReviewController@store')->middleware('auth');
 
 // Route::get('/review/{id} ', 'ReviewController@show');
 

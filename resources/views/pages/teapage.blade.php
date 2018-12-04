@@ -42,6 +42,53 @@
 
       </div>
 
+
+
+            <div class="rating">
+
+            @if($averageOfStars == 1)
+            <label>
+              <input type="radio" name="stars" value="1" />
+              <span class="icon">★</span>
+            </label>
+            @elseif($averageOfStars == 2)
+
+            <label>
+              <input type="radio" name="stars" value="2" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            @elseif($averageOfStars == 3)
+
+            <label>
+              <input type="radio" name="stars" value="3" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            @elseif($averageOfStars == 4)
+
+            <label>
+              <input type="radio" name="stars" value="4" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            @elseif($averageOfStars == 5)
+
+            <label>
+              <input type="radio" name="stars" value="5" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+          </div>
+          @endif
+        </div>
+
         <a href="#reviews"><span class="float-right">See Reviews ({{$reviews->count()}})</span></a>
 
     </div>
@@ -164,14 +211,61 @@
 <div class="border">
 
     <div class="pl-2 pt-2 bg-light pb-1">
-      <p>{{$review->user_name}} at {{$review->prettyUpdate()}}</p>
+      <p>{{$review->user_name}} at {{$review->prettyUpdate()}}</p></br>
+
+      <div class="rating">
+
+      @if($review->stars == 1)
+      <label>
+        <input type="radio" name="stars" value="1" />
+        <span class="icon">★</span>
+      </label>
+      @elseif($review->stars == 2)
+
+      <label>
+        <input type="radio" name="stars" value="2" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      @elseif($review->stars == 3)
+
+      <label>
+        <input type="radio" name="stars" value="3" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      @elseif($review->stars == 4)
+
+      <label>
+        <input type="radio" name="stars" value="4" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      @elseif($review->stars == 5)
+
+      <label>
+        <input type="radio" name="stars" value="5" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
     </div>
+    @endif
+  </div>
+
+
 
     <div class="ml-2">
     <p>{{$review->review}}</p>
     </div>
 
 </div>
+
 @endforeach
 
 @else
@@ -180,6 +274,38 @@
 
 <form class=" pt-1 mb-4 mt-5" method="POST" action="/review">
   @csrf
+  <div class="rating">
+  <label>
+    <input type="radio" selected="selected" name="stars" value="1" />
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="2" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="3" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="4" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="5" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+</div>
     <label for="review"><h4>leave a review for {{$tea->name}}!</h4></label>
     <textarea class="form-control textarea " type="text" id="review" name="review" required></textarea>
     <input type="hidden" name="productid" value="{{ $tea->id }}"></input>

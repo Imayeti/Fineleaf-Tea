@@ -19,6 +19,8 @@ class CreateReviewsTable extends Migration
             $table->foreign('product_id')->references('id')->on('products');
             $table->text('review');
             $table->string('user_name');
+            $table->integer('stars');
+
             $table->timestamps();
 
         });

@@ -72,7 +72,16 @@ class TeawareController extends Controller
       $reviews = new \App\review;
       $reviews = $reviews->where('product_id', $id)->get();
 
-      return view('pages.teapage', compact('tea','randomProducts', 'reviews'));
+      if($reviews->count() > 0){
+          $allStars = array();
+          foreach($reviews as $review){
+          array_push($allStars, $review->stars);
+          }
+          $averageOfStars = ceil(array_sum($allStars)/count($allStars));
+      }else{
+        $averageOfStars = 0;
+      }
+      return view('pages.teapage', compact('tea','randomProducts', 'reviews', 'averageOfStars'));
 
     }
 
