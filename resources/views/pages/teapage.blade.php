@@ -121,7 +121,7 @@
           </tr>
           <tr>
             <td class="border-top-0">195°F</td>
-            <td class="border-top-0">4 oz. per 100ml</td>
+            <td class="border-top-0">4 g per 100ml</td>
             <td class="border-top-0">15 sec</td>
             <td class="border-top-0">7</td>
           </tr>
@@ -146,7 +146,7 @@
           </tr>
           <tr>
             <td class="border-top-0">195°F</td>
-            <td class="border-top-0">1 oz. per 100ml</td>
+            <td class="border-top-0">1 g per 100ml</td>
             <td class="border-top-0">130 sec</td>
             <td class="border-top-0">3</td>
           </tr>
@@ -281,40 +281,41 @@
 
 <form class=" pt-1 mb-4 mt-5" method="POST" action="/review">
   @csrf
-  <div class="rating float-right">
-  <label>
-    <input type="radio" required name="stars" value="1" />
-    <span class="icon">★</span>
-  </label>
-  <label>
-    <input type="radio" name="stars" value="2" />
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-  </label>
-  <label>
-    <input type="radio" name="stars" value="3" />
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-  </label>
-  <label>
-    <input type="radio" name="stars" value="4" />
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-  </label>
-  <label>
-    <input type="radio" name="stars" value="5" />
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-    <span class="icon">★</span>
-  </label>
 
-</div>
-    <label for="review"><h4>leave a rating and review for {{$tea->name}}!</h4></label>
+    <h4 class="lightgrey pt-1 pb-1">leave a rating and review for {{$tea->name}}!</h4>
+    <div class="rating ">
+    <label>
+      <input type="radio" required name="stars" value="1" />
+      <span class="icon">★</span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="2" />
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="3" />
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="4" />
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="5" />
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+      <span class="icon">★</span>
+    </label>
+
+  </div>
     <textarea class="form-control border textarea " type="text" id="review" name="review" required></textarea>
     <input type="hidden" name="productid" value="{{ $tea->id }}"></input>
     <button class="btn btn-secondary float-right mt-3 mb-3 btn-sm" type="submit">Add Review</button>
