@@ -10803,10 +10803,6 @@ body {
   margin-right: auto;
 }
 
-.background-pic {
-  background-image: url("/images/mapwithteaclub.jpg");
-}
-
 .fulldiv {
   height: 100vh;
 }
@@ -10902,7 +10898,9 @@ input:focus {
 }
 
 .rating2 {
-  color: yellow;
+  margin-top: 7.5px !important;
+  margin-left: 7.5px !important;
+  padding-top: 0px !important;
   display: block;
   position: relative;
   height: 20px;
@@ -10964,5 +10962,9 @@ input:focus {
 
 a > .greytext {
   color: grey;
+}
+
+.lightgrey {
+  background-color: #F7F7F7;
 }
 

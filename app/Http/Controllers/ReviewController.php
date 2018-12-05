@@ -9,6 +9,7 @@ class ReviewController extends Controller
     public function store(Request $request) {
 
 
+
       $review = new \App\review;
       $review->product_id = $request->productid;
       $review->review = $request->review;

@@ -36,7 +36,7 @@
                       <form class="form-inline my-2 my-lg-0" method="get" action="/search">
                           @csrf
                          <input class="form-control mr-sm-2" name="searchstring" type="search" placeholder="Search" aria-label="Search">
-                         <button class="btn btn-sm  my-2 my-sm-0 mr-4" type="submit">Search</button>
+                         <button class="btn btn-sm btn-secondary  my-2 my-sm-0 mr-4" type="submit">Search</button>
                       </form>
                         <!-- Authentication Links -->
                         <li>
@@ -121,7 +121,7 @@
                         <form class="form-inline my-2 my-lg-0" method="get" action="/search">
                             @csrf
                            <input class="form-control mr-sm-2" name="searchstring" type="search" placeholder="Search" aria-label="Search">
-                           <button class="btn btn-sm  my-2 my-sm-0 mr-4" type="submit">Search</button>
+                           <button class="btn btn-sm btn-secondary my-2 my-sm-0 mr-4" type="submit">Search</button>
                         </form>
                           <!-- Authentication Links -->
                           <li>

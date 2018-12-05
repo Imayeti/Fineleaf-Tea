@@ -335,24 +335,8 @@ button:hover {
 
 }
 
-.background-pic {
-
-  background-image: url("/images/mapwithteaclub.jpg");
-
-}
 
 
-h3 {
-  // color: #31a8c2;
-}
-
-// .navbar-nav li a {
-//  line-height: 38px;
-// }
-// .navbar-nav li a p {
-//   line-height: 10px;
-//
-// }
 
 .fulldiv {
   height:100vh;
@@ -383,10 +367,6 @@ input:focus {
   box-shadow: 0 0 10px #719ECE !important;
 }
 
-div.inline {
-
-
-  }
 
 
 
@@ -467,7 +447,9 @@ div.inline {
 
 
     .rating2 {
-      color: yellow;
+      margin-top: 7.5px !important;
+      margin-left: 7.5px !important;
+      padding-top: 0px !important;
       display: block;
       position: relative;
       height: 20px;
@@ -537,6 +519,9 @@ div.inline {
    color: grey;
  }
 
+.lightgrey {
+  background-color: #F7F7F7;
+}
 
 
 
