@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
         $bob->email = 'bob@bob.bob';
         $bob->password = bcrypt('secret');
         $bob->products = [['product' => 4, 'quantity' => 2],['product' => 5, 'quantity' => 2],['product' => 3, 'quantity' => 4]];
-        $bob->gifts = [['product' => 4, 'quantity' => 2]];
+        $bob->gifts = [3];
         $bob->save();
     }
 }

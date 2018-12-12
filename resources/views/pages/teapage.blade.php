@@ -37,6 +37,9 @@
 
           <button type="submit" class="btn btn-light ml-5 mr-4 no-margin">Add To Cart</button>
         </form>
+        <form action="/gifts/{{ $tea->id }}" method="get"> @csrf
+          <button type="submit" class="btn btn-light ml-5 mr-4 no-margin">Gift To A Friend</button>
+        </form>
       </div>
 
 

@@ -78,8 +78,8 @@ class User extends Authenticatable
     //build up my own array of the data called $gifts by looping through by finding by id from the json
       $gifts=array();
       foreach($userGiftArray as $item){
-        $gift = \App\product::find($item['product']);
-        $gift->quantity = $item['quantity'];
+        $gift = \App\product::find($item);
+
         array_push($gifts,  $gift);
 
       }
