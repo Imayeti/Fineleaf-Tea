@@ -127,7 +127,7 @@ class ShoppingCartController extends Controller
 
       $userProducts = \Auth::user()->products;
 
-
+      //searching to find if the item is already in the cart by looking through all products and seeing if the id mathes $id sent in request
       $found = "notfilled";
         for($i = 0; $i < count($userProducts); $i++){
           $product = $userProducts[$i];
@@ -141,9 +141,9 @@ class ShoppingCartController extends Controller
         }
 
 
-
+        //if the item is found in the products of the user already, just add the quantity selected to the quantity that is already on that product->quantity
           if ($found !== "notfilled" ) {
-
+            //the array at the index of $found gets updated with new quantity
             $userProducts[$found]['quantity'] = $request->requestQuantity + $userProducts[$found]['quantity'];
 
             $user = \Auth::user();
@@ -153,29 +153,9 @@ class ShoppingCartController extends Controller
             return redirect('/tea/' . $id );
           };
 
-      // function arrayKeyValueSearch($array, $key, $value)
-      //     {
-      //         $results = array();
-      //         if (is_array($array)) {
-      //             if (isset($array[$key]) && $array[$key] == $value) {
-      //                 $results[] = $array;
-      //             }
-      //             foreach ($array as $subArray) {
-      //                 $results = array_merge($results, arrayKeyValueSearch($subArray, $key, $value));
-      //             }
-      //         }
-      //         return $results;
-      //     }
-      //
-      //
-      //
-      //     dd(arrayKeyValueSearch($userProducts, "product", 10));
-      //
 
 
-
-
-
+          // otherwise, just push  the product with the quantity that is sent in the request to the end of the array
         array_push($userProducts,  ['product' => intval($id), 'quantity' => intval($request->requestQuantity)]);
 
         $user = \Auth::user();

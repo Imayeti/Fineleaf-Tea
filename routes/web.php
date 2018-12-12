@@ -58,6 +58,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/orders', 'OrdersController@index')->middleware('auth');
 
+Route::get('/gifts', 'GiftsController@index')->middleware('auth');
+
 Route::get('/search', 'SearchController@index');
 
 Route::post('/review', 'ReviewController@store')->middleware('auth');

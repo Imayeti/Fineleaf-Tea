@@ -29,8 +29,12 @@ class User extends Authenticatable
     ];
 
     protected $casts = [
-        'products' => 'array'
+        'products' => 'array',
+        'gifts' => 'array'
+
     ];
+
+
 
     public function orders() {
       return $this->hasMany('App\order');
@@ -47,8 +51,9 @@ class User extends Authenticatable
         $product = \App\product::find($item['product']);
         $product->quantity = $item['quantity'];
         array_push($cart,  $product);
-
       }
+      dd($cart);
+
       return $cart;
     }
 
@@ -63,6 +68,22 @@ class User extends Authenticatable
     public function total() {
       $total = $this->subtotal() + 10;
       return $total;
+    }
+
+    public function gifts() {
+      // dd($this->products);
+
+      $userGiftArray = $this->gifts;
+      // dd($userGiftArray);
+    //build up my own array of the data called $gifts by looping through by finding by id from the json
+      $gifts=array();
+      foreach($userGiftArray as $item){
+        $gift = \App\product::find($item['product']);
+        $gift->quantity = $item['quantity'];
+        array_push($gifts,  $gift);
+
+      }
+      return $gifts;
     }
 
 
