@@ -60,7 +60,7 @@ Route::get('/orders', 'OrdersController@index')->middleware('auth');
 
 Route::get('/gifts', 'GiftsController@index')->middleware('auth');
 Route::get('/gifts/{id}', 'GiftsController@show')->middleware('auth');
-Route::post('/gifts/{id}', 'GiftsController@Update')->middleware('auth');
+Route::patch('/gifts/{id}', 'GiftsController@Update')->middleware('auth');
 
 Route::get('/search', 'SearchController@index');
 

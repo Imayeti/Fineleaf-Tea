@@ -33,7 +33,11 @@ class GiftsController extends Controller
     {
 
       $user = \App\User::where('email', $request->email)->first();
+      if (!$user){
+        session()->flash('status', "No User With That Email Exists");
 
+        return redirect('/gifts/' . $id);
+      }
 
 
       // dd($user);
@@ -45,7 +49,7 @@ class GiftsController extends Controller
       $user->gifts = $userGifts;
       $user->save();
 
-      return view('pages.thankyou' );
+      return view('pages.gift_sent' );
       // dd($userGifts);
 
 

@@ -84,18 +84,12 @@
 </table>
 <div class="clearfix">
 <form class="form-inline my-2 my-lg-0 float-right" method="post" action="/gifts/{{ $product->id }}">
-    @PATCH
+    @method('PATCH')
     @csrf
     <label class="mr-3"for="findUser" >What is the email of the individual you want to send this gift to?</label>
-   <input class="form-control mr-sm-2" name="email" type="search" id="findUser" placeholder="" aria-label="Search">
-
-
-
-
-
-
-      <button type="submit" class="btn btn-light float-right mb-4 mr-2" >Gift it!</button>
-    </form>
+    <input class="form-control mr-sm-2" name="email" type="search" id="findUser" placeholder="" aria-label="Search" required>
+    <button type="submit" class="btn btn-light float-right mb-4 mr-2" >Gift it!</button>
+</form>
 
 </div>
 
