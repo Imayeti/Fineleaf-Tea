@@ -8,7 +8,6 @@ class ProductController extends Controller
 {
   public function index()
     {
-dd('hi');
 
       $teas = new \App\product;
 
@@ -19,7 +18,7 @@ dd('hi');
 
 public function show($id)
   {
-    dd('hi');
+
   }
 
 }

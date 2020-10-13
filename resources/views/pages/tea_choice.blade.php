@@ -40,57 +40,10 @@
 
 </div>
 
-<!--
-<div class="row container " style=" margin: 0 auto;">
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-
-        <div class="card card-center">
-          <img class="card-img-top" src="images/Golden-Monkey-Black.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">golden monkey black tea</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/Golden-Monkey-Black.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">golden monkey black tea</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/Golden-Monkey-Black.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">golden monkey black tea</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="card card-center">
-          <img class="card-img-top" src="images/Gyokuro.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">golden monkey black tea</p>
-          </div>
-        </div>
-      </div>
-</div>  -->
 
 <hr width="50%" class="center-block mt-3 mb-3">
 
-
-
-
-      @include('carousel')
-
-
-
-
+@include('carousel')
 
 
 @endsection

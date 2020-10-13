@@ -12,13 +12,6 @@
 <h1 class="text-center mt-5 ">Teaware</h1>
 <hr width="100px" class="center-block pb-5">
 
-
-
-
-
-
-
-
   <div class="row container " style=" margin: 0 auto;">
     @foreach($teaware as $item)
 
@@ -46,14 +39,7 @@
   </div>
 
 
-
-
-
-
 <hr width="50%" class="center-block mt-3 mb-3">
-
-
-
 
 <div class="container col-lg-6 col-md-8 col-sm-10 col-xs-10 pt-5 pb-5">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

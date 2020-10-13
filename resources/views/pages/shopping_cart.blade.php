@@ -159,9 +159,6 @@
 
 
 
-
-
-
 <div class="clearfix">
     <form class="" action="/shopping_cart/{{ $total }}" method="get">
       @csrf
@@ -181,15 +178,6 @@
 @endif
 
 </div>
-
-
-
-
-
-
-
-
-
 
 
 

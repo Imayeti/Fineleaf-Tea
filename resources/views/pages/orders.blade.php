@@ -47,19 +47,11 @@
     </tr>
 
 
-
-
-
-
-
-
   @endforeach
 
 
     </tbody>
   <tfoot>
-
-
 
 
       <tr>
@@ -101,17 +93,11 @@
     </tfoot>
 
     </table>
-<!-- <hr class="thick-hr"> -->
+
 @endforeach
 
 
 </div>
-
-
-
-
-
-
 
 
 @endsection

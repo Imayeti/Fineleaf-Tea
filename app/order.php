@@ -33,10 +33,6 @@ class order extends Model
       return $order;
   }
 
-    // dd($userProductArray);
-  //build up my own array of the data called $temp by looping through by finding by id from the json
-
-
 
   public function subtotal() {
     $subtotal = 0;

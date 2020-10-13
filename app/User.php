@@ -45,14 +45,13 @@ class User extends Authenticatable
 
       $userProductArray = $this->products;
       // dd($userProductArray);
-    //build up my own array of the data called $temp by looping through by finding by id from the json
+    //build up my own array of the data called $cart by looping through by finding by id from the json
       $cart=array();
       foreach($userProductArray as $item){
         $product = \App\product::find($item['product']);
         $product->quantity = $item['quantity'];
         array_push($cart,  $product);
       }
-      dd($cart);
 
       return $cart;
     }
@@ -75,13 +74,11 @@ class User extends Authenticatable
 
       $userGiftArray = $this->gifts;
       // dd($userGiftArray);
-    //build up my own array of the data called $gifts by looping through by finding by id from the json
+     //build up my own array of the data called $gifts by looping through by finding by id from the json
       $gifts=array();
       foreach($userGiftArray as $item){
         $gift = \App\product::find($item);
-
         array_push($gifts,  $gift);
-
       }
       return $gifts;
     }

@@ -18,34 +18,16 @@ Route::get('/', function () {
     return view('pages.welcome');
 });
 
-
-// Route::get('/teapage', function () {
-//     return view('pages.teapage');
-//
-// });
-
 Route::get('/homepage', function () {
    return view('pages.homepage');
 });
 
 
-// Route::get('/tea_choice', function () {
-//    return view('pages.tea_choice');
-// });
-//new of above
 Route::resource('/tea','TeaController');
-
-// Route::get('/tea_page/{id}','ProductController@show');
-
-
 
 Route::resource('/teaware', 'TeawareController');
 
-
-
 Route::resource('/shopping_cart', 'ShoppingCartController')->middleware('auth');
-
-
 
 Route::get('/sign_up', function () {
    return view('pages.sign_up');
@@ -65,10 +47,3 @@ Route::patch('/gifts/{id}', 'GiftsController@Update')->middleware('auth');
 Route::get('/search', 'SearchController@index');
 
 Route::post('/review', 'ReviewController@store')->middleware('auth');
-
-// Route::get('/review/{id} ', 'ReviewController@show');
-
-//test route!!!!!
-// Route::get('/layouttest', function () {
-//    return view('pages.layouttest');
-// });

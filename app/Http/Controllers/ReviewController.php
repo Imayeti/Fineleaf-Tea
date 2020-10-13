@@ -19,7 +19,6 @@ class ReviewController extends Controller
       $review->save();
 
 
-
       session()->flash('status', "Thank You For Your Review");
       return redirect ('/tea/' . $request->productid);
 
